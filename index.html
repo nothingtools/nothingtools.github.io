@@ -1223,6 +1223,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             } catch (e) { alert("SERVER BUSY. TRY LATER."); bar.style.width = '0%'; bar.style.transition = 'none'; txt.innerText = 'TRY AGAIN'; } finally { btn.style.pointerEvents = 'all'; }
         }
         async function downloadAIWall(btn) { runDownload(btn, document.getElementById('aiImg').src); }
+      /* ================= DISABLE IMAGE HOLD MENU ================= */
+        // Yeh code kisi bhi image par right click ya long press disable karega
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        }, false);
+
+        // Yeh drag karne se rokega (Ghost image ban ne se)
+        window.ondragstart = function() { return false; };
     </script>
 </body>
 </html>
