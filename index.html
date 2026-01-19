@@ -27,7 +27,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="description" content="Community hub for Nothing Phone users. Download firmware, wallpapers, and tools.">
 
     <link rel="icon" type="image/svg+xml" href="./icon.svg">
-    
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -324,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="header-top">
             <div class="logo">
                 <p style="opacity: 0.4; letter-spacing: 2px;">ONLY FOR FANS</p>
-                <h1>NOTHING<br>Space</h1>
+                <h1>Nothing<br>Space</h1>
             </div>
             <button class="t-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" style="background:var(--card); border:1px solid var(--border);">
                 <i class="fa-solid fa-sun" id="t-icon"></i>
@@ -434,14 +435,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="input-group">
                 <select id="swSelect" onchange="showLogs()" aria-label="Select Device">
                     <option value="">SELECT YOUR DEVICE</option>
-                    <option value="p1">NOTHING PHONE (1)</option>
-                    <option value="p2">NOTHING PHONE (2)</option>
-                    <option value="p2a">NOTHING PHONE (2A)</option>
-                    <option value="p2aplus">NOTHING PHONE (2A) PLUS</option>
-                    <option value="p3">NOTHING PHONE (3)</option>
-                    <option value="p3a">NOTHING PHONE (3A)</option>
-                    <option value="p3apro">NOTHING PHONE (3A) PRO</option>
-                    <option value="p3alite">NOTHING PHONE (3A) LITE</option>
+                    <option value="p1">Nothing PHONE (1)</option>
+                    <option value="p2">Nothing PHONE (2)</option>
+                    <option value="p2a">Nothing PHONE (2A)</option>
+                    <option value="p2aplus">Nothing PHONE (2A) PLUS</option>
+                    <option value="p3">Nothing PHONE (3)</option>
+                    <option value="p3a">Nothing PHONE (3A)</option>
+                    <option value="p3apro">Nothing PHONE (3A) PRO</option>
+                    <option value="p3alite">Nothing PHONE (3A) LITE</option>
                     <option value="cmf1">CMF PHONE 1</option>
                     <option value="cmf2pro">CMF PHONE 2 PRO</option>
                 </select>
@@ -721,7 +722,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="javascript:void(0)" onclick="openScreen('disclaimerScr')">DISCLAIMER</a>
           <a href="javascript:void(0)" onclick="openScreen('contactScr')">CONTACT</a>
         </div>
-        <p>NOTHING Space © 2026<br>DESIGNED FOR THE COMMUNITY</p>
+        <p>Nothing Space © 2026<br>DESIGNED FOR THE COMMUNITY</p>
     </footer>
 
     <script>
@@ -980,10 +981,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 if (data.results.length > 0) {
                     currentPlaylist = data.results.map(song => ({
                         url: song.previewUrl, art: song.artworkUrl100.replace('100x100', '400x400'),
-                        title: song.trackName.replace(/mzaf_\d+/g, "NOTHING TRACK").toUpperCase(), artist: "NOTHING Space"
+                        title: song.trackName.replace(/mzaf_\d+/g, "Nothing TRACK").toUpperCase(), artist: "Nothing Space"
                     }));
                     currentIndex = 0; card.style.display = "block"; loadSong(0);
-                } else alert("NOTHING FOUND");
+                } else alert("Nothing FOUND");
             } catch (e) { console.error(e); } finally { btn.innerHTML = originalBtn; }
         }
         function loadSong(index) {
