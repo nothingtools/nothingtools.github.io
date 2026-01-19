@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607055557776596"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-1607055557776596">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing Space - Built Together</title>
+    <meta name="description" content="Community hub for Nothing Phone users. Download firmware, wallpapers, and tools.">
+
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <link rel="preconnect" href="https://nothingcommunity-7664f-default-rtdb.firebaseio.com">
+
+
+    <style>
+        /* ================= ROOT & THEME ================= */
+        :root { 
+            --bg: #000; --card: #0c0c0c; --text: #fff; --dot-bg: #222; 
+            --border: #1a1a1a; --instr: #bbb; --accent: #ff0000;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color-scheme: light dark;
+        }
+        [data-theme="light"] { --bg: #fff; --card: #f5f5f5; --text: #000; --dot-bg: #ddd; --border: #eee; --instr: #333; }
+        [data-theme="dark"] { --bg: #000; --card: #0c0c0c; --text: #fff; --dot-bg: #250; --border: #1a1a1a; --instr: #bbb; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body { 
+            background: var(--bg); color: var(--text); font-family: 'VT323', monospace; 
+            transition: background var(--transition); width: 100%; overflow-x: hidden; min-height: 100vh; 
+        }
+
+        h1, h2, h3, span, button, select, input, p { font-family: 'VT323', monospace !important; text-transform: uppercase; }
+
+        /* PERFORMANCE OPTIMIZATION */
+        .bento, footer, .screen { content-visibility: auto; contain-intrinsic-size: 1000px; }
+        
+        /* IMAGE PROTECTION STYLES */
+        img { 
+            -webkit-touch-callout: none !important; /* Blocks iOS Menu */
+            -webkit-user-select: none !important;   /* Blocks Text Selection */
+            -khtml-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+            -webkit-user-drag: none !important;     /* Blocks Dragging */
+            pointer-events: auto !important;        /* Keeps your click buttons working */
+        }
+
+        /* ================= BACKGROUND ANIMATIONS ================= */
+        .stars-container { position: fixed; inset: 0; z-index: -1; background: var(--bg); overflow: hidden; pointer-events: none; }
+        .star { position: absolute; background: white; border-radius: 50%; opacity: 0; will-change: opacity; }
+
+        .canvas { 
+            position: fixed; inset: 0; background-image: radial-gradient(var(--dot-bg) 1.2px, transparent 1.2px); 
+            background-size: 32px 32px; z-index: -1; opacity: 0.5; pointer-events: none;
+        }
+
+        .moon {
+            position: fixed; width: 80px; height: 80px; 
+            top: 10%; left: 10%; 
+            background: #d1d1d1; border-radius: 50%; z-index: -1; opacity: 0.5;
+            box-shadow: inset -15px -15px 30px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.2);
+            background-image: radial-gradient(circle at 30% 30%, #adadad 10%, transparent 15%), radial-gradient(circle at 60% 70%, #adadad 8%, transparent 12%);
+        }
+
+        /* ================= HEADER & BENTO ================= */
+        header { 
+            max-width: 1000px; 
+            margin: 30px auto 20px; 
+            padding: 0 20px; 
+            display: flex; 
+            flex-direction: column; /* Changed for new layout */
+            gap: 20px;
+        }
+
+        .header-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 { font-size: 3.5rem; letter-spacing: -1px; line-height: 0.9; }
+        .logo p { opacity: 0.8 !important; letter-spacing: 2px; }
+
+        .header-info {
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 15px 0;
+            text-align: center;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .t-toggle { width: 45px; height: 45px; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center; cursor: pointer; background: var(--card); transition: var(--transition); }
+        .t-toggle:hover { border-color: var(--text); }
+        #t-icon { color: var(--text) !important;transition: transform .3s ease; } 
+        .t-toggle:active #t-icon { transform: rotate(150deg) scale(1.1); }
+
+        .bento { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1000px; margin: 0 auto; padding: 0 20px 20px; }
+        @media (min-width: 768px) { .bento { grid-template-columns: repeat(3, 1fr); } }
+
+        .tile { 
+            background: var(--card); border: 1px solid var(--border); border-radius: 35px; padding: 25px; cursor: pointer; transition: var(--transition);
+            opacity: 1; transform: none; position: relative; overflow: hidden;
+        }
+        .tile:hover { border-color: #333; transform: translateY(-2px); }
+        .tile:active { transform: scale(0.95); }
+        .tile h2 { font-size: 2.2rem; position: relative; z-index: 2; }
+        .tile p { opacity: 0.8 !important; font-size: 1rem; position: relative; z-index: 2; }
+                /* New Tile Icon Style */
+        .tile-icon {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 0rem;
+            opacity: 0.15;
+            color: var(--text);
+            z-index: 10;
+            transform: rotate;
+            transition: 0.3s;
+        }
+        .tile:hover .tile-icon { opacity: 0.3; transform: rotate(0deg) scale(1.1); }
+
+        .full { grid-column: span 2; }
+        @media (min-width: 768px) { .full { grid-column: span 1; } }
+        
+        
+        
+        /* ================= MODALS WITH BOUNCY ANIMATION ================= */
+        .screen { 
+            position: fixed; inset: 0; 
+            background: rgba(0,0,0,0.6); 
+            backdrop-filter: blur(15px); 
+            z-index: 2000; 
+            display: none; 
+            align-items: center; justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .screen.active { display: flex !important; opacity: 1; }
+
+        .modal { 
+            background: var(--bg); 
+            border: 1px solid var(--border); 
+            width: 90%; 
+            max-width: 500px; 
+            max-height: 85vh;
+            border-radius: 35px;
+            padding: 30px; 
+            position: relative; 
+            overflow-y: auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
+            
+            /* BOUNCE START STATE */
+            opacity: 0;
+            transform: scale(0.7) translateY(50px);
+            
+            /* BOUNCE CURVE: Cubic Bezier for jelly effect */
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+            will-change: transform, opacity;
+        }
+
+        /* BOUNCE END STATE */
+        .screen.active .modal { 
+            opacity: 1; 
+            transform: scale(1) translateY(0); 
+        }
+
+        .close-icon { 
+            position: absolute; right: 25px; top: 25px;
+            font-size: 2.2rem; cursor: pointer; opacity: 0.5; 
+            transition: 0.2s; z-index: 10;
+        }
+        .close-icon:hover { opacity: 1; color: var(--text); }
+        .modal h2 { margin-bottom: 20px !important; margin-top: 5px !important; line-height: 1; }
+
+        /* ================= BUTTONS & INPUTS ================= */
+        .input-group { position: relative; width: 100%; margin-bottom: 18px; display: flex; align-items: center; }
+        select, input.imei-box, input[type="text"] { width: 100%; padding: 20px; background: var(--card); border: 1px solid var(--border); color: var(--text); border-radius: 22px; font-size: 1.6rem; outline: none; appearance: none; }
+        input.imei-box { text-align: center; letter-spacing: 2px; }
+        .arrow-wrapper { position: absolute; right: 25px; pointer-events: none; color: #ffffff; }
+
+        .btn { 
+            position: relative; width: 100%; padding: 18px; border-radius: 22px; border: none; 
+            background: var(--text); color: var(--bg); font-size: 1.6rem; 
+            cursor: pointer; font-weight: bold; margin-top: 5px; overflow: hidden;
+            display: flex; justify-content: center; align-items: center; transition: 0.2s;
+        }
+        .progress-bar { position: absolute; left: 0; top: 0; height: 100%; width: 0%; background: rgba(128,128,128,0.5); z-index: 1; }
+        .btn-text { position: relative; z-index: 2; }
+
+        .pg-btn {
+            width: 100%; padding: 20px 30px; border-radius: 22px; background: var(--card);
+            border: 1px solid var(--border); color: var(--text); font-size: 1.2rem; letter-spacing: 1px;
+            display: flex; justify-content: space-between; align-items: center;
+            cursor: pointer; margin-bottom: 15px; font-weight: thin; transition: 0.2s; text-transform: uppercase;
+        }
+        .pg-btn i { font-size: 1.2rem; }
+        .pg-btn:hover { border-color: var(--text); }
+        .pg-btn:active { transform: scale(0.98); background: var(--border); }
+
+        .dot-arrow { width: 20px; height: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; }
+        .dot-row { display: flex; gap: 2px; }
+        .dot { width: 2.5px; height: 2.5px; background: var(--text); border-radius: 50%; }
+
+        /* ================= CHAT STYLES ================= */
+        .red-dot-loader { width: 12px; height: 12px; background-color: #ff0000; border-radius: 50%; display: inline-block; animation: pulse-red 0.8s ease-in-out infinite; }
+        @keyframes pulse-red { 0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); } 100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); } }
+
+        .msg-bubble { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 12px 15px; border-radius: 20px; position: relative; max-width: 85%; align-self: flex-start; margin-bottom: 10px; }
+        .u-badge { font-size: 0.7rem; background: var(--text); color: var(--bg); padding: 2px 8px; border-radius: 5px; margin-bottom: 5px; display: inline-block; }
+        .admin-reply-box { margin-top: 10px; padding: 8px 12px; background: rgba(255, 0, 0, 0.05); border-left: 2px solid var(--accent); border-radius: 10px; font-size: 0.9rem; }
+        .admin-tag { color: var(--accent); font-weight: bold; font-size: 0.7rem; display: block; margin-bottom: 2px; }
+
+        /* ================= MUSIC UI ================= */
+        .music-ui { text-align: center; }
+        .search-box-m { display: flex; background: #eef2f7 !important; padding: 5px 10px; border-radius: 50px !important; border: 1px solid var(--border); margin-bottom: 20px; align-items: center; }
+        .search-box-m input { flex: 1; background: transparent !important; border: none !important; color: #000 !important; padding: 12px; font-size: 1.2rem; outline: none; }
+        .go-btn { width: 40px !important; height: 40px !important; border-radius: 50% !important; border: none; background: #000 !important; color: #fff !important; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        #music-card { display: none; margin-top: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 30px; padding: 20px; text-align: center; }
+        .disc { width: 140px; height: 140px; border-radius: 50%; border: 2px solid var(--border); margin: 0 auto 15px auto; object-fit: cover; display: block; }
+        .spinning { animation: rotate 10s linear infinite; }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .m-ctrls { display: flex; justify-content: center; align-items: center; gap: 30px; font-size: 1.8rem; margin: 20px 0; }
+
+        #mini-player { position:absolute; top:65px; right:90px; width:45px; height:45px; border-radius:50%; border:2px solid var(--accent); overflow:hidden; cursor:pointer; display:none; z-index:10; background:#000; }
+        #mini-art { width:100%; height:100%; object-fit:cover; display:block; }
+
+        /* ================= WALLPAPERS & CARDS ================= */
+        .wp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
+
+        .wp-card { 
+            height: 250px; background: #111; border-radius: 25px; position: relative; overflow: hidden; border: 1px solid var(--text);
+            opacity: 1; transform: translateY(0); transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .wp-card.hidden-state { opacity: 0; transform: translateY(50px) scale(0.95); }
+        .wp-card.scroll-active { opacity: 1; transform: translateY(0) scale(1); }
+
+        .wp-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; display: block; }
+        .wp-overlay { position: absolute; bottom: 0; width: 100%; padding: 10px; background: linear-gradient(transparent, rgba(0,0,0,0.9)); text-align: center; }
+        .wp-overlay p { color: #fff !important; opacity: 1 !important; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        .wp-overlay .btn { width: 90%; margin: 5px auto 0; padding: 8px 0; font-size: 1rem; border-radius: 15px; background: #fff !important; }
+        .wp-overlay .btn .btn-text { color: #000 !important; font-weight: bold !important; opacity: 1 !important; }
+
+        /* ================= OTHER MODULES ================= */
+        .up-box { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 15px; margin-bottom: 12px; }
+        .up-box h4 { font-size: 1.4rem; color: var(--text) !important; }
+        .up-box p { font-size: 0.9rem; opacity: 0.8 !important; margin-top: 4px; text-transform: none; }
+
+        .sw-display { display: none; align-items: center; gap: 20px; margin: 15px 0; padding: 15px; background: var(--card); border-radius: 25px; border: 1px solid var(--border); animation: fadeIn 0.3s ease; }
+        .sw-img-box { width: 70px; height: 90px; border-radius: 12px; overflow: hidden; background: var(--card); flex-shrink: 0; }
+        .sw-img-box img { width: 120%; height: 100%; object-fit: cover; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .guide-box { border: 1px solid var(--border); border-radius: 22px; margin-bottom: 15px; overflow: hidden; margin-top: 20px; background: var(--card); }
+        .guide-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .guide-content { max-height: 0; overflow: hidden; transition: 0.4s ease; padding: 0 20px; opacity: 0; }
+        .guide-content.open { max-height: 500px; padding: 20px; opacity: 1; border-top: 1px solid var(--border); }
+        .guide-content p { color: var(--text) !important; opacity: 0.8 !important; text-transform: none; font-size: 1.1rem; margin-bottom: 15px; }
+
+        .detail-card { background: var(--card); border: 1px solid var(--border); border-radius: 30px; padding: 25px; margin-top: 20px; animation: fadeIn 0.3s ease; }
+        .sc-badge { background: #222; color: #888; padding: 4px 10px; border-radius: 8px; font-size: 0.9rem; border: 1px solid var(--border); }
+        .card-row { display: flex; gap: 10px; margin-top: 15px; }
+
+        footer { text-align: center; padding: 30px; opacity: 1 !important; font-size: 0.8rem; letter-spacing: 1px; margin-top: 10px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; }
+        footer a { color: var(--text); }
+        footer p { opacity: 0.8 !important; }
+        
+        #aiSection { display: none; background: var(--card); border: 1px solid var(--border); padding: 15px; border-radius: 25px; margin-bottom: 20px; animation: fadeIn 0.3s ease; }
+    </style>
+</head>
+<body>
+<div class="stars-container" id="starField"></div>
+    <div class="canvas"></div>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <p style="opacity: 0.4; letter-spacing: 2px;">ONLY FOR FANS</p>
+                <h1>NOTHING<br>SPACE</h1>
+            </div>
+            <button class="t-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" style="background:var(--card); border:1px solid var(--border);">
+                <i class="fa-solid fa-circle" id="t-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="bento">
+                <div class="tile full" onclick="openScreen('upScr')"><h1>WEBSITE</h1><p>WHAT'S NEW ADDED</p></div>
+        <div class="tile full" onclick="openScreen('musicScr')"><h1>RINGTONE</h1><p>Preview Your Song</p></div>
+        <div class="tile full" onclick="openScreen('pgScr')"><h1>PLAYGROUND</h1><p>presets WIDGETs APPs</p></div>
+        <div class="tile full" onclick="openScreen('swScr')"><h1>SOFTWARE </h1><p>NOS ZIP FILE</p></div>
+        <div class="tile full" onclick="openScreen('wpScr')"><h1>WALLPAPER </h1><p>EXCLUSIVe Collection</p></div>
+        <div class="tile full" onclick="openScreen('scScr')"><h1>SERVICE </h1><p>LOCATE CENTERS</p></div>
+        <div class="tile full" onclick="openScreen('feedbackScr')"><h1>COMMUNITY </h1><p>FEEDBACK & SUGGESTIONS</p></div>
+     </div>
+
+    <div id="mini-player" onclick="restorePlayer()">
+        <img src="" id="mini-art" class="spinning" alt="Mini Player Art">
+    </div>
+
+    <div id="upScr" class="screen"><div class="modal">
+        <button class="close-icon" onclick="closeScreen('upScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+        <h2>WEBSITE LOGS</h2>
+        <div style="margin-top:20px;">
+            <div class="up-box"><h4>COMMUNITY BOARD</h4><p>Now you can share feedback, ideas & suggestions.</p></div>
+            <div class="up-box"><h4>NEW RINGTONE PLAYER</h4><p>Ad-free nonstop ringtones & background Playble.</p></div>
+            <div class="up-box"><h4>NEW WALLPAPERS</h4><p>Added high-quality art works in the gallery.</p></div>
+            <div class="up-box"><h4>SOFTWARE UPDATE</h4><p>Now supports all phones with latest NOS ZIPs.</p></div>
+            <div class="up-box"><h4>SERVICE DATABASE</h4><p>Call or open maps directly, no more hassle.</p></div>
+        </div>
+    </div></div>
+
+    <div id="feedbackScr" class="screen">
+        <div class="modal" style="height: 80vh; display: flex; flex-direction: column;">
+            <button class="close-icon" onclick="closeScreen('feedbackScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+            <h2>COMMUNITY BOARD</h2>
+            <p style="opacity: 0.4; font-size: 0.8rem; margin-bottom: 15px;">PUBLIC FEEDBACK & CHAT</p>
+            <div id="msgBoard" style="flex: 1; overflow-y: auto; padding: 10px; display: flex; flex-direction: column; gap: 15px; scroll-behavior: smooth;"></div>
+            <div style="background: var(--card); border: 1px solid var(--border); border-radius: 30px; padding: 5px 5px 5px 15px; display: flex; align-items: center; margin-top: 15px;">
+                <input type="text" id="userMsg" placeholder="SHARE SUGGESTION..." aria-label="Type Message" style="flex: 1; background: transparent; border: none; color: var(--text); outline: none; font-family: 'VT323' !important; font-size: 1.2rem;">
+                <button onclick="sendMsg()" aria-label="Send Message" style="width: 45px; height: 45px; border-radius: 50%; background: var(--text); color: var(--bg); border: none; cursor: pointer; display: flex; justify-content: center; align-items: center;">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="musicScr" class="screen">
+        <div class="modal">
+            <button class="close-icon" onclick="handleMusicClose()" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+            <h2>RINGTONE PLAYER</h2>
+            <div class="music-ui">
+                <div class="search-box-m">
+                    <input type="text" id="mQuery" placeholder="SEARCH SONG..." aria-label="Search Song">
+                    <button class="go-btn" id="mSearchBtn" onclick="searchMusic()" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div id="music-card">
+                <img src="" id="mArt" class="disc" alt="Album Art">
+                <h3 id="mTitle" style="margin-top:15px;">TITLE</h3>
+                <p id="mArtist" style="opacity:0.5;">ARTIST</p>
+                <div class="m-ctrls">
+                    <i class="fa-solid fa-backward-step" onclick="prevSong()" style="cursor:pointer"></i>
+                    <span id="play-pause" onclick="togglePlay()" style="cursor:pointer"><i class="fa-solid fa-circle-play"></i></span>
+                    <i class="fa-solid fa-forward-step" onclick="nextSong()" style="cursor:pointer"></i>
+                </div>
+                <button class="btn" onclick="downloadCurrentSong()">DOWNLOAD</button>
+            </div>
+            <audio id="mPlayer" onended="nextSong()"></audio>
+        </div>
+    </div>
+
+    <div id="swScr" class="screen">
+        <div class="modal">
+            <button class="close-icon" onclick="closeScreen('swScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+            <h2>SYSTEM UPDATE</h2>
+            <div class="guide-box">
+                <div class="guide-header" onclick="toggleAccordion()">
+                    <span>HOW TO UPDATE?</span>
+                    <div class="arrow-wrapper" style="position:static;"><div class="dot-arrow"><div class="dot-row"><div class="dot"></div><div class="dot" style="visibility:hidden"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div></div></div></div>
+                </div>
+                <div class="guide-content" id="accContent">
+                    <p>1. DOWNLOAD THE BETA HUB TOOL APK.<br>2. CREATE "OTA" FOLDER IN INTERNAL STORAGE AND PASTE OTA ZIP INSIDE.<br>3. SETTING - SYSTEM - BETA HUB - IMPORT FILE - ZIP - UPDATE.</p>
+                    <button class="btn" style="font-size:1.6rem; padding:17px;"  onclick="runDownload(this, 'BETA_TOOL')"><div class="progress-bar"></div><span class="btn-text">DOWNLOAD BETA TOOL</span></button>
+                </div>
+            </div>
+
+            <div class="sw-display" id="swDisplay">
+                <div class="sw-img-box">
+                    <img src="" id="swPhoneImg"
+                         style="cursor: pointer;"
+                         alt="Phone Image"
+                         onmousedown="startSoftwareLogic()" 
+                         ontouchstart="startSoftwareLogic()" 
+                         onmouseup="cancelSoftwareLogic()" 
+                         onmouseleave="cancelSoftwareLogic()" 
+                         ontouchend="cancelSoftwareLogic()" 
+                         ontouchmove="cancelSoftwareLogic()">
+                </div>
+                <div class="sw-info">
+                    <h2 id="swPhoneTitle">DEVICE</h2>
+                    <p style="opacity:0.5; font-size:0.9rem;">Official OTA Firmware</p>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <select id="swSelect" onchange="showLogs()" aria-label="Select Device">
+                    <option value="">SELECT YOUR DEVICE</option>
+                    <option value="p1">NOTHING PHONE (1)</option>
+                    <option value="p2">NOTHING PHONE (2)</option>
+                    <option value="p2a">NOTHING PHONE (2A)</option>
+                    <option value="p2aplus">NOTHING PHONE (2A) PLUS</option>
+                    <option value="p3">NOTHING PHONE (3)</option>
+                    <option value="p3a">NOTHING PHONE (3A)</option>
+                    <option value="p3apro">NOTHING PHONE (3A) PRO</option>
+                    <option value="p3alite">NOTHING PHONE (3A) LITE</option>
+                    <option value="cmf1">CMF PHONE 1</option>
+                    <option value="cmf2pro">CMF PHONE 2 PRO</option>
+                </select>
+                <div class="arrow-wrapper"><div class="dot-arrow"><div class="dot-row"><div class="dot"></div><div class="dot" style="visibility:hidden"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div></div></div></div>
+            </div>
+            <div id="logBox" style="display:none;" class="detail-card">
+                <h3>NOTES:</h3>
+                <ul id="swList" style="margin:15px 0; opacity:0.7; list-style: inside; text-transform: none;"></ul>
+                <button class="btn" onclick="runDownload(this, 'OTA_ZIP')"><div class="progress-bar"></div><span class="btn-text">DOWNLOAD OTA ZIP</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pgScr" class="screen"><div class="modal">
+        <button class="close-icon" onclick="closeScreen('pgScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+        <h2>PLAYGROUND</h2>
+        <div style="margin-top:20px;">
+            <div class="pg-btn" onclick="openScreen('presetScr')"><span>CAMERA PRESETS</span><i class="fa-solid fa-camera"></i></div>
+                  </div>
+    </div></div>
+
+    <div id="presetScr" class="screen"><div class="modal">
+        <button class="close-icon" onclick="closeScreen('presetScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+        <h2>CAMERA PRESETS</h2>
+        <p style="opacity:0.5; margin-bottom:10px;">EXCLUSIVE PRESETS</p>
+        <div class="wp-grid" id="presetGrid"></div>
+    </div></div>
+
+    <div id="wpScr" class="screen">
+        <div class="modal">
+            <button class="close-icon" onclick="closeScreen('wpScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+            <h2>GALLERY</h2>
+            
+            <div onclick="toggleAI()" style="background: var(--text); border: 1px solid var(--border); border-radius: 20px; padding: 16px; margin-bottom: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: var(--bg); font-weight: bold; font-size: 1.2rem;"> CREATE WITH AI</span>
+                <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--bg);"></i>
+            </div>
+
+            <div id="aiSection">
+                <div class="input-group">
+                    <input type="text" id="aiPrompt" placeholder="DESCRIBE YOUR IDEA..." aria-label="AI Prompt" style="text-align: left;">
+                </div>
+                <div class="input-group">
+                    <select id="aiRatio" aria-label="Aspect Ratio">
+                        <option value="9:16">MOBILE (9:16)</option>
+                        <option value="16:9">PC (16:9)</option>
+                        <option value="1:1">SQUARE (1:1)</option>
+                    </select>
+                    <div class="arrow-wrapper"><div class="dot-arrow"><div class="dot-row"><div class="dot"></div><div class="dot" style="visibility:hidden"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div></div></div></div>
+                </div>
+                
+                <button class="btn" id="genBtn" onclick="generateAIWall()"><div class="progress-bar"></div><span class="btn-text">GENERATE</span></button>
+                
+                <div id="aiResult" style="margin-top: 20px; display: none;">
+                    <div class="wp-card" style="height: 400px; border: 1px solid var(--border);">
+                        <img id="aiImg" src="" style="width: 100%; height: 100%; object-fit: cover;" alt="AI Result">
+                        <div class="wp-overlay">
+                            <button class="btn" onclick="downloadAIWall(this)"><div class="progress-bar"></div><span class="btn-text">DOWNLOAD</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wp-grid" id="wallpaperGrid"></div>
+        </div>
+    </div>
+    <div id="scScr" class="screen"><div class="modal">
+        <button class="close-icon" onclick="closeScreen('scScr')" aria-label="Close Modal" style="background:transparent; border:none; color:var(--text);">×</button>
+        <h2>SERVICE CENTERS</h2>
+        <div class="input-group" style="margin-top:20px;">
+            <select id="state" onchange="loadCities()" aria-label="Select State">
+                <option value="">SELECT STATE</option>
+                <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                <option value="ASSAM">ASSAM</option>
+                <option value="BIHAR">BIHAR</option>
+                <option value="CHANDIGARH">CHANDIGARH</option>
+                <option value="CHHATTISGARH">CHHATTISGARH</option>
+                <option value="DELHI">DELHI</option>
+                <option value="GOA">GOA</option>
+                <option value="GUJARAT">GUJARAT</option>
+                <option value="HARYANA">HARYANA</option>
+                <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+                <option value="JHARKHAND">JHARKHAND</option>
+                <option value="KARNATAKA">KARNATAKA</option>
+                <option value="KERALA">KERALA</option>
+                <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                <option value="MAHARASHTRA">MAHARASHTRA</option>
+                <option value="MEGHALAYA">MEGHALAYA</option>
+                <option value="NAGALAND">NAGALAND</option>
+                <option value="ODISHA">ODISHA</option>
+                <option value="PUDUCHERRY">PUDUCHERRY</option>
+                <option value="PUNJAB">PUNJAB</option>
+                <option value="RAJASTHAN">RAJASTHAN</option>
+                <option value="TAMIL NADU">TAMIL NADU</option>
+                <option value="TELANGANA">TELANGANA</option>
+                <option value="TRIPURA">TRIPURA</option>
+                <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                <option value="UTTARAKHAND">UTTARAKHAND</option>
+                <option value="WEST BENGAL">WEST BENGAL</option>
+            </select>
+            <div class="arrow-wrapper"><div class="dot-arrow"><div class="dot-row"><div class="dot"></div><div class="dot" style="visibility:hidden"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div></div></div></div>
+        </div>
+        <div class="input-group">
+            <select id="city" onchange="showDetails()" aria-label="Select City" style="display:none"></select>
+            <div class="arrow-wrapper" id="cityArrow" style="display:none"><div class="dot-arrow"><div class="dot-row"><div class="dot"></div><div class="dot" style="visibility:hidden"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div><div class="dot"></div></div><div class="dot-row"><div class="dot"></div></div></div></div>
+        </div>
+        <div id="scInfo"></div>
+    </div></div>
+    
+    <div id="aboutScr" class="screen">
+      <div class="modal">
+        <span class="close-icon" onclick="closeScreen('aboutScr')">×</span>
+        <h2>ABOUT US</h2>
+        <p style="text-align:center; opacity:0.6; font-size:0.9rem; margin-bottom:15px; letter-spacing:1px;">ESTABLISHED 2024 • COMMUNITY DRIVEN</p>
+        
+        <div class="detail-card">
+          <p>
+            Welcome to <b>Nothing Space</b>. We are a dedicated open-source resource hub built for enthusiasts of the Nothing™ technology ecosystem. Our mission is to bridge the gap between complex developer resources and the average user.
+          </p>
+          
+          <h3 style="margin-top:20px; font-size:1.2rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;">OUR MISSION</h3>
+          <p>
+            To provide a safe, ad-free (pop-up free), and direct download environment for Firmware, Mods, and Tools. We believe in the "Right to Repair" and "Device Customization" philosophies.
+          </p>
+
+          <h3 style="margin-top:20px; font-size:1.2rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;">EDITORIAL STANDARDS</h3>
+          <p>
+            Reliability is our core value. To ensure user safety, every file hosted on Nothing Space undergoes a strict 3-step verification process:
+          </p>
+          <ul style="margin-left:20px; opacity:0.8; list-style:square; margin-top:10px;">
+            <li><b>Source Verification:</b> We only mirror links from official OTA servers (android.googleapis.com) or trusted developers.</li>
+            <li><b>Security Scanning:</b> All APKs are scanned via VirusTotal APIs before listing to ensure 0% malware.</li>
+            <li><b>Manual Testing:</b> Our internal team tests UI mods on real hardware (Phone 1/2) to ensure stability.</li>
+          </ul>
+
+          <h3 style="margin-top:20px; font-size:1.2rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;">THE TEAM</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;">
+            <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; text-align:center;">
+                <span style="font-size:0.8rem; opacity:0.6;">LEAD DEVELOPER</span><br><b>ROHIT KUMAR</b>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; text-align:center;">
+                <span style="font-size:0.8rem; opacity:0.6;">HQ LOCATION</span><br><b>BIHAR, INDIA</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="privacyScr" class="screen">
+      <div class="modal">
+        <span class="close-icon" onclick="closeScreen('privacyScr')">×</span>
+        <h2>PRIVACY POLICY</h2>
+        <div class="detail-card">
+          <p style="font-size:0.9rem; opacity:0.6; margin-bottom:15px;">Last Updated: January 16, 2026</p>
+          
+          <p>At Nothing Space (accessible from nothingtools.github.io), safeguarding the privacy of our visitors is one of our primary objectives. This Privacy Policy document contains types of information that is collected and recorded by Nothing Space and how we use it.</p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">1. INFORMATION COLLECTION</h3>
+          <p>
+            <b>Personal Data:</b> We do not require you to create an account or provide personal details (like Name, Phone Number, Address) to access our downloads.<br>
+            <b>Voluntary Data:</b> If you contact us via email, we will only use your email address to reply to your query. It will never be sold or shared.
+          </p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">2. GOOGLE ADSENSE & COOKIES</h3>
+          <p>We partner with Google AdSense to display advertisements. Google uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our site and other sites on the internet.</p>
+          <div style="margin-top:10px; background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; font-size:0.9rem;">
+            <b>OPT-OUT:</b> You may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy at <a href="https://policies.google.com/technologies/ads" target="_blank" style="text-decoration:underline;">policies.google.com</a>.
+          </div>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">3. GDPR DATA PROTECTION RIGHTS</h3>
+          <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+          <ul style="margin-left:20px; opacity:0.8; list-style:circle; margin-top:5px;">
+              <li>The right to access – You have the right to request copies of your personal data.</li>
+              <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate.</li>
+              <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
+          </ul>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">4. CCPA PRIVACY RIGHTS</h3>
+          <p>Under the CCPA, among other rights, California consumers have the right to request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">5. LOG FILES</h3>
+          <p>Nothing Space follows a standard procedure of using log files. The data collected includes internet protocol (IP) addresses, browser type, ISP, date/time stamp, and referring/exit pages. This information is used for analyzing trends and preventing DDoS attacks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="termsScr" class="screen">
+      <div class="modal">
+        <span class="close-icon" onclick="closeScreen('termsScr')">×</span>
+        <h2>TERMS OF USE</h2>
+        <div class="detail-card">
+          <p>By accessing this website, you confirm that you understand and agree to comply with these terms and conditions. Do not continue to use Nothing Space if you do not agree to all of the terms stated on this page.</p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">1. INTELLECTUAL PROPERTY</h3>
+          <p>Unless otherwise stated, Nothing Space and/or its licensors own the intellectual property rights for all original material on this website. All intellectual property rights are reserved.</p>
+          <ul style="margin-left:20px; opacity:0.8; list-style:square; margin-top:5px;">
+            <li>You must not republish material from Nothing Space.</li>
+            <li>You must not sell, rent, or sub-license material from Nothing Space.</li>
+            <li>You must not reproduce, duplicate or copy material from Nothing Space without permission.</li>
+          </ul>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">2. LIMITATION OF LIABILITY</h3>
+          <p>The content and tools on Nothing Space are provided "as is". We make no warranties, expressed or implied.</p>
+          <p style="margin-top:10px;">
+            <b>Device Safety:</b> The firmware links, APKs, and guides provided are for educational and customization purposes. Modifying system software (Flashing OTA, Unlocking Bootloader) carries inherent risks. Nothing Space and its developers are <b>NOT responsible</b> for any damage to your device, data loss, or voiding of warranty. Always backup your data.
+          </p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">3. GOVERNING LAW</h3>
+          <p>These terms and conditions are governed by and construed in accordance with the laws of <b>India</b>. You irrevocably submit to the exclusive jurisdiction of the courts in the State of <b>Bihar</b> for the resolution of any disputes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="disclaimerScr" class="screen">
+      <div class="modal">
+        <span class="close-icon" onclick="closeScreen('disclaimerScr')">×</span>
+        <h2>LEGAL DISCLAIMER</h2>
+        <div class="detail-card">
+          
+          <div style="border: 2px solid var(--text); padding: 15px; border-radius: 15px; margin-bottom: 20px; background: rgba(255,255,255,0.05);">
+            <p style="margin:0; font-weight:bold; font-size:1.1rem; text-align:center;">
+                ⚠ UNOFFICIAL FAN PROJECT
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+               Nothing Space is an independent, community-run resource hub. We are <u>NOT</u> affiliated, associated, authorized, endorsed by, or in any way officially connected with <b>Nothing Technology Limited</b>, CMF, or any of their subsidiaries.
+            </p>
+          </div>
+
+          <h3 style="font-size:1.1rem;">TRADEMARKS</h3>
+          <p>
+            The names "Nothing", "Phone (1)", "Phone (2)", "Phone (2a)", "CMF" and related marks, emblems, and images are registered trademarks of their respective owners. We use these names solely for descriptive purposes to identify the devices our resources are intended for. This constitutes <b>"Fair Use"</b> under copyright law.
+          </p>
+
+          <h3 style="margin-top:20px; font-size:1.1rem;">CONTENT ACCURACY</h3>
+          <p>
+            While we strive to keep the information up to date and correct, we make no representations or warranties of any kind about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information contained on the website.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactScr" class="screen">
+      <div class="modal">
+        <span class="close-icon" onclick="closeScreen('contactScr')">×</span>
+        <h2>GET IN TOUCH</h2>
+        <div class="detail-card">
+          <p style="text-align:center; margin-bottom:20px;">Have a suggestion for the site, found a broken link, or have a DMCA request? Choose a method below.</p>
+          
+          <div style="background:rgba(0, 136, 204, 0.1); border:1px solid #0088cc; padding:15px; border-radius:15px; text-align:center; margin-bottom:15px;">
+            <i class="fa-brands fa-telegram" style="font-size:2.5rem; color:#0088cc; display:block; margin-bottom:5px;"></i>
+            <p style="opacity:0.6; margin-bottom:5px; font-size:0.8rem;">JOIN OUR COMMUNITY CHANNEL</p>
+            <a href="https://t.me/techiboy_discuss" target="_blank" style="color:#fff; background:#0088cc; padding:8px 15px; border-radius:5px; text-decoration:none; font-weight:bold; display:inline-block;">OPEN TELEGRAM <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid var(--border); padding:15px; border-radius:15px; text-align:center;">
+            <i class="fa-solid fa-envelope" style="font-size:1.5rem; display:block; margin-bottom:5px;"></i>
+            <p style="opacity:0.6; margin-bottom:5px; font-size:0.8rem;">OFFICIAL SUPPORT EMAIL</p>
+            <a href="mailto:rkkiller298@gmail.com" style="color:var(--text); text-decoration:underline; font-size:1.2rem;">rkkiller298@gmail.com</a>
+          </div>
+
+          <h3 style="margin-top:20px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px;">OPERATIONAL DETAILS</h3>
+          <ul style="margin-left:20px; opacity:0.8; list-style:square; margin-top:10px;">
+            <li><b>Response Time:</b> Within 24-48 Hours</li>
+            <li><b>Region:</b> Muzaffarpur, Bihar, India</li>
+            <li><b>Legal Contact:</b> Use the email above for takedown requests.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+          <a href="javascript:void(0)" onclick="openScreen('aboutScr')">ABOUT</a>
+          <a href="javascript:void(0)" onclick="openScreen('privacyScr')">PRIVACY</a>
+          <a href="javascript:void(0)" onclick="openScreen('termsScr')">TERMS</a>
+          <a href="javascript:void(0)" onclick="openScreen('disclaimerScr')">DISCLAIMER</a>
+          <a href="javascript:void(0)" onclick="openScreen('contactScr')">CONTACT</a>
+        </div>
+        <p>NOTHING SPACE © 2026<br>DESIGNED FOR THE COMMUNITY</p>
+    </footer>
+
+    <script>
+        /* ================= CONFIG & GLOBALS ================= */
+        const CONFIG = {
+            BETA_TOOL_URL: "https://github.com/nothingcommunity/Testing/raw/refs/heads/main/Apps/Beta%20Updates%20Hub.apk",
+            SOFTWARE: {}, SERVICE_DB: {}, WALLPAPERS: []
+        };
+        const DB_URL = "https://nothingcommunity-7664f-default-rtdb.firebaseio.com/chat.json";
+        let SERVICE_DB = {}; 
+        let currentPlaylist = [], currentIndex = 0, lastPlayedArt = "";
+
+        // ================= INITIALIZATION (PERFORMANCE OPTIMIZED) =================
+        window.addEventListener('load', () => {
+            applyAutoTheme();
+            createStars(); // Optimized Stars Back
+            createMoon();
+            
+            // Defer heavy data fetch slightly to prioritize UI
+            setTimeout(() => {
+                initSoftwareData();
+                initServiceData();
+                loadMessages();
+            }, 100);
+        });
+
+        // ============================================
+        //  REMOVED: GOOGLE ADSENSE & ANALYTICS LOADER
+        // ============================================
+        // The previous function 'loadHeavyScripts' has been disabled/cleaned 
+        // to remove all tracking codes.
+        function loadHeavyScripts() {
+            if (window.isScriptsLoaded) return;
+            window.isScriptsLoaded = true;
+            console.log("🚀 Heavy Scripts Placeholder (No Tags Loaded)");
+        }
+        
+        ['scroll','touchstart','click'].forEach(e => window.addEventListener(e, loadHeavyScripts, {passive:true, once:true}));
+        setTimeout(loadHeavyScripts, 4500); // Fallback
+
+        /* ================= THEME & UI ================= */
+        function applyAutoTheme() {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            updateThemeIcon(prefersDark ? 'dark' : 'light');
+        }
+        function toggleTheme() {
+            const root = document.documentElement;
+            const newTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+        function updateThemeIcon(theme) { document.getElementById('t-icon').className = theme === 'dark' ? "fa-solid fa-circle" : "fa-solid fa-sun"; }
+
+        /* ================= OPTIMIZED STARS (Back & Fast) ================= */
+        function createStars() {
+            requestAnimationFrame(() => {
+                const field = document.getElementById('starField');
+                field.innerHTML = '';
+                const fragment = document.createDocumentFragment();
+                // Optimization: Less stars on mobile to avoid lag
+                const count = window.innerWidth < 768 ? 80 : 250; 
+                for(let i=0; i < count; i++) {
+                    const s = document.createElement('div'); s.className = 'star';
+                    const size = Math.random() * 3;
+                    s.style.cssText = `width:${size}px; height:${size}px; top:${Math.random()*100}%; left:${Math.random()*100}%; animation: blink ${2+Math.random()*3}s infinite; opacity:${Math.random()}`;
+                    fragment.appendChild(s);
+                }
+                field.appendChild(fragment);
+            });
+        }
+        function createMoon() {
+            if(!document.querySelector('.moon')) { const moon = document.createElement('div'); moon.className = 'moon'; document.body.appendChild(moon); }
+        }
+
+        /* ================= SCROLL ANIMATION ================= */
+        function attachScrollAnimation() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('hidden-state'); 
+                        entry.target.classList.add('scroll-active');       
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.wp-card').forEach(card => {
+                card.classList.add('hidden-state'); 
+                observer.observe(card);
+            });
+        }
+
+        /* ================= NAVIGATION & BOUNCY ANIMATION ================= */
+        function openScreen(id) {
+            const s = document.getElementById(id);
+            if (!s) return;
+
+            // 1. Display Flex
+            s.style.display = 'flex'; 
+            
+            // 2. Force Reflow (Important for animation)
+            // Using setTimeout ensures browser registers the display change before animating
+            setTimeout(() => {
+                s.classList.add('active');
+            }, 10);
+
+            if(id === 'wpScr') initWallpaperData();
+            if(id === 'presetScr') initPresetData();
+        }
+
+        function closeScreen(id) {
+            const s = document.getElementById(id);
+            if (!s) return;
+
+            // 1. Remove Active (Triggers closing animation)
+            s.classList.remove('active'); 
+
+            // 2. Wait for animation to finish, then hide
+            setTimeout(() => { 
+                s.style.display = 'none'; 
+                // AI Section Reset
+                if(id === 'wpScr') {
+                    const aiSec = document.getElementById('aiSection');
+                    if(aiSec) aiSec.style.display = 'none';
+                }
+            }, 400); // 400ms matches CSS transition
+        }
+
+        // TOGGLE AI
+        function toggleAI() {
+            const section = document.getElementById('aiSection');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+
+        /* ================= DOWNLOAD LOGIC ================= */
+        async function runDownload(btn, input) {
+            const bar = btn.querySelector('.progress-bar');
+            const txt = btn.querySelector('.btn-text');
+            const oldTxt = txt.innerText;
+            let finalUrl = "";
+
+            if (input === 'BETA_TOOL') finalUrl = CONFIG.BETA_TOOL_URL;
+            else if (input === 'OTA_ZIP') {
+                const device = document.getElementById('swSelect').value;
+                if(!device) { alert("PLEASE SELECT A DEVICE!"); return; }
+                finalUrl = CONFIG.SOFTWARE[device]?.url;
+            } else finalUrl = input;
+
+            if (!finalUrl || finalUrl === "#") { alert("LINK NOT FOUND!"); return; }
+
+            btn.style.pointerEvents = 'none'; txt.innerText = 'PROCESSING...';
+            bar.style.transition = 'width 1.5s linear'; bar.style.width = '100%';
+
+            const isZip = finalUrl.toLowerCase().endsWith('.zip') || finalUrl.toLowerCase().endsWith('.apk');
+            if (isZip) {
+                setTimeout(() => {
+                    const link = document.createElement('a'); link.href = finalUrl; link.target = "_blank";
+                    document.body.appendChild(link); link.click(); document.body.removeChild(link);
+                    finishDownload(btn, txt, bar, oldTxt);
+                }, 1000);
+            } else {
+                try {
+                    const response = await fetch(finalUrl);
+                    const blob = await response.blob();
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a'); link.href = blobUrl; link.download = "NothingSpace_" + Date.now() + ".png";
+                    document.body.appendChild(link); link.click(); document.body.removeChild(link); window.URL.revokeObjectURL(blobUrl);
+                    finishDownload(btn, txt, bar, oldTxt);
+                } catch (err) {
+                    window.open(finalUrl, '_blank'); finishDownload(btn, txt, bar, oldTxt);
+                }
+            }
+        }
+        function finishDownload(btn, txt, bar, oldTxt) {
+            txt.innerText = "DONE ✓"; setTimeout(() => { bar.style.transition = 'none'; bar.style.width = '0%'; txt.innerText = oldTxt; btn.style.pointerEvents = 'all'; }, 1000);
+        }
+
+        /* ================= SOFTWARE MODULE (FIREBASE) ================= */
+        async function initSoftwareData() {
+            try {
+                const response = await fetch("https://nothingsoftware-3cc7c-default-rtdb.firebaseio.com/software_data.json");
+                const data = await response.json();
+                if (data) CONFIG.SOFTWARE = data;
+            } catch (err) { console.error("SW Error:", err); }
+        }
+        function showLogs() {
+            const m = document.getElementById('swSelect').value;
+            const box = document.getElementById('logBox'), disp = document.getElementById('swDisplay');
+            if(!m || !CONFIG.SOFTWARE[m]) { box.style.display = 'none'; disp.style.display = 'none'; return; }
+            const data = CONFIG.SOFTWARE[m];
+            document.getElementById('swPhoneImg').src = data.img;
+            document.getElementById('swPhoneTitle').innerText = data.disp;
+            disp.style.display = 'flex';
+            document.getElementById('swList').innerHTML = (data.logs && Array.isArray(data.logs)) ? data.logs.map(l => `<li>${l}</li>`).join('') : "<li>Details not available</li>";
+            box.style.display = 'block';
+        }
+        function toggleAccordion() { document.getElementById('accContent').classList.toggle('open'); }
+
+        // SOFTWARE ADMIN LOGIC (With Hash)
+        let sw_timer;
+        function startSoftwareLogic() {
+            sw_timer = setTimeout(() => {
+                if(navigator.vibrate) navigator.vibrate(50);
+                openSoftwareMenu();
+            }, 2500);
+        }
+        function cancelSoftwareLogic() { clearTimeout(sw_timer); }
+
+        async function openSoftwareMenu() {
+            const id = document.getElementById('swSelect').value;
+            const pass = prompt("🔐 SOFTWARE ADMIN PASSWORD:");
+            if(stringToHash(pass) === "1540218401") {
+                if(!id) {
+                    if(confirm("🆕 ADD NEW DEVICE?")) {
+                        const newId = prompt("Unique ID (e.g. phone3):");
+                        if(!newId) return;
+                        const payload = { disp: prompt("Name:"), img: prompt("Img URL:"), url: prompt("Zip Link:"), logs: [prompt("Note:")] };
+                        await fetch(`https://nothingsoftware-3cc7c-default-rtdb.firebaseio.com/software_data/${newId}.json`, {method:'PUT', body:JSON.stringify(payload)});
+                        alert("ADDED!"); initSoftwareData();
+                    }
+                    return;
+                }
+                const cur = CONFIG.SOFTWARE[id];
+                const choice = prompt(`EDIT ${cur.disp}:\n1.LINK\n2.NAME\n3.IMG\n4.NOTE`);
+                let load = {};
+                if(choice==="1") load={url:prompt("URL:", "")};
+                if(choice==="2") load={disp:prompt("NAME:", "")};
+                if(choice==="3") load={img:prompt("IMG:", "")};
+                if(choice==="4") {
+                    const raw = prompt("NOTE (| for new line):", "");
+                    if(raw) load={logs: raw.split('|').map(s=>s.trim())};
+                }
+                if(Object.keys(load).length) {
+                    await fetch(`https://nothingsoftware-3cc7c-default-rtdb.firebaseio.com/software_data/${id}.json`, {method:'PATCH', body:JSON.stringify(load)});
+                    alert("SAVED!"); initSoftwareData(); showLogs();
+                }
+            } else { if(pass) alert("WRONG PASSWORD"); }
+        }
+
+        /* ================= MUSIC MODULE ================= */
+        async function searchMusic() {
+            const query = document.getElementById('mQuery').value;
+            const btn = document.getElementById('mSearchBtn');
+            const card = document.getElementById('music-card');
+            if (!query) return;
+            const originalBtn = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+            try {
+                const _0x1 = "aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3NlYXJjaD9saW1pdD0yNTAmZW50aXR5PXNvbmcmdGVybT0=";
+                const res = await fetch(`${atob(_0x1)}${encodeURIComponent(query)}`);
+                const data = await res.json();
+                if (data.results.length > 0) {
+                    currentPlaylist = data.results.map(song => ({
+                        url: song.previewUrl, art: song.artworkUrl100.replace('100x100', '400x400'),
+                        title: song.trackName.replace(/mzaf_\d+/g, "NOTHING TRACK").toUpperCase(), artist: "NOTHING SPACE"
+                    }));
+                    currentIndex = 0; card.style.display = "block"; loadSong(0);
+                } else alert("NOTHING FOUND");
+            } catch (e) { console.error(e); } finally { btn.innerHTML = originalBtn; }
+        }
+        function loadSong(index) {
+            if (!currentPlaylist[index]) return;
+            const song = currentPlaylist[index];
+            const player = document.getElementById('mPlayer');
+            document.getElementById('mArt').src = song.art;
+            document.getElementById('mTitle').innerText = song.title;
+            document.getElementById('mArtist').innerText = song.artist;
+            lastPlayedArt = song.art;
+            if(document.getElementById('mini-art')) document.getElementById('mini-art').src = lastPlayedArt; 
+            player.src = song.url; player.load(); togglePlay(true);
+            
+            // --- ADDED: Media Session API for Notification Control ---
+            if ('mediaSession' in navigator) {
+                navigator.mediaSession.metadata = new MediaMetadata({
+                    title: song.title,
+                    artist: song.artist,
+                    album: "Nothing Space",
+                    artwork: [
+                        { src: song.art, sizes: '512x512', type: 'image/jpeg' }
+                    ]
+                });
+
+                navigator.mediaSession.setActionHandler('play', function() { togglePlay(true); });
+                navigator.mediaSession.setActionHandler('pause', function() { togglePlay(false); });
+                navigator.mediaSession.setActionHandler('previoustrack', prevSong);
+                navigator.mediaSession.setActionHandler('nexttrack', nextSong);
+            }
+            // ---------------------------------------------------------
+        }
+        function togglePlay(forcePlay = false) {
+            const player = document.getElementById('mPlayer');
+            const icon = document.querySelector('#play-pause i');
+            const art = document.getElementById('mArt');
+            if (player.paused || forcePlay) { 
+                player.play().catch(()=>{}); 
+                icon.className = "fa-solid fa-circle-pause"; 
+                art.classList.add('spinning'); 
+                if('mediaSession' in navigator) navigator.mediaSession.playbackState = "playing";
+            } 
+            else { 
+                player.pause(); 
+                icon.className = "fa-solid fa-circle-play"; 
+                art.classList.remove('spinning'); 
+                if('mediaSession' in navigator) navigator.mediaSession.playbackState = "paused";
+            }
+        }
+        function nextSong() { if(currentPlaylist.length) { currentIndex = (currentIndex + 1) % currentPlaylist.length; loadSong(currentIndex); } }
+        function prevSong() { if(currentPlaylist.length) { currentIndex = (currentIndex - 1 + currentPlaylist.length) % currentPlaylist.length; loadSong(currentIndex); } }
+        function handleMusicClose() { closeScreen('musicScr'); if (!document.getElementById('mPlayer').paused) { document.getElementById('mini-player').style.display = 'block'; document.getElementById('mini-art').src = lastPlayedArt; document.getElementById('mini-art').classList.add('spinning'); } }
+        function restorePlayer() { document.getElementById('mini-player').style.display = 'none'; openScreen('musicScr'); }
+        async function downloadCurrentSong() {
+            const song = currentPlaylist[currentIndex];
+            const btn = document.querySelector('#music-card .btn');
+            if(!song) return;
+            btn.style.pointerEvents = "none"; btn.innerText = "FETCHING...";
+            try {
+                const response = await fetch(song.url);
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a'); a.href = url; a.download = `${song.title.replace(/[^a-zA-Z0-9\s]/g, '').trim()} - NothingSpace.mp3`;
+                document.body.appendChild(a); a.click(); document.body.removeChild(a); window.URL.revokeObjectURL(url);
+                btn.innerText = "DONE ✓";
+            } catch (e) { window.open(song.url, '_blank'); btn.innerText = "OPENED"; }
+            setTimeout(() => { btn.innerText = "DOWNLOAD"; btn.style.pointerEvents = "all"; }, 2000);
+        }
+
+        /* ================= CHAT MODULE (FIXED) ================= */
+        let userUUID = localStorage.getItem('ns_user_uuid');
+        if (!userUUID) {
+            userUUID = 'uid_' + Date.now().toString(36) + Math.random().toString(36).substr(2);
+            localStorage.setItem('ns_user_uuid', userUUID);
+        }
+        let savedName = localStorage.getItem('ns_user_fixed') || "";
+
+        async function sendMsg() {
+            const input = document.getElementById('userMsg');
+            const btn = document.querySelector('#feedbackScr button');
+            const msg = input.value.trim();
+            
+            if (!msg) return;
+            if (msg === "/reset") {
+                localStorage.removeItem('ns_user_fixed'); savedName = "";
+                alert("NAME RESET!"); input.value = ""; return;
+            }
+            if (!savedName || savedName === "USER") {
+                let enterName = prompt("ENTER YOUR NAME:");
+                if (!enterName || enterName.trim() === "") return;
+                savedName = enterName.trim().toUpperCase();
+                localStorage.setItem('ns_user_fixed', savedName);
+            }
+
+            const originalHTML = btn.innerHTML; btn.disabled = true; btn.innerHTML = '<span class="red-dot-loader"></span>';
+            try {
+                const banCheck = await fetch(`https://nothingcommunity-7664f-default-rtdb.firebaseio.com/banned/${userUUID}.json`);
+                const isBanned = await banCheck.json();
+                if (isBanned === true) { alert("🚫 YOU ARE BANNED."); return; }
+
+                await fetch(DB_URL, { 
+                    method: 'POST', headers: { 'Content-Type': 'application/json' }, 
+                    body: JSON.stringify({ userName: savedName, text: msg, reply: "", timestamp: Date.now(), uuid: userUUID, isVerified: false }) 
+                }); 
+                input.value = ""; await loadMessages(); 
+            } catch (e) { alert("FAILED"); } finally { btn.disabled = false; btn.innerHTML = originalHTML; }
+        }
+
+        async function loadMessages() {
+            try {
+                const [chatRes, verifyRes] = await Promise.all([
+                    fetch(DB_URL),
+                    fetch("https://nothingcommunity-7664f-default-rtdb.firebaseio.com/verified_users.json")
+                ]);
+                const data = await chatRes.json();
+                const verifiedData = await verifyRes.json() || {};
+                const board = document.getElementById('msgBoard');
+                
+                if (!data) { board.innerHTML = '<p style="opacity:0.4; text-align:center;">NO MESSAGES YET.</p>'; return; }
+                const messages = Object.keys(data).map(key => ({ id: key, ...data[key] }));
+                
+                board.innerHTML = messages.map(m => {
+                    const isUserVerified = (m.uuid && verifiedData[m.uuid] === true);
+                    const tickHtml = isUserVerified ? '<i class="fa-solid fa-circle-check" style="color:#1da1f2; margin-left:4px; font-size:0.8rem;"></i>' : '';
+                    return `
+                    <div class="msg-bubble" style="user-select: none;" 
+                         onmousedown="startPress('${m.id}', '${m.userName}', ${isUserVerified}, '${m.uuid}')" 
+                         ontouchstart="startPress('${m.id}', '${m.userName}', ${isUserVerified}, '${m.uuid}')" 
+                         onmouseup="cancelPress()" onmouseleave="cancelPress()" ontouchend="cancelPress()">
+                        <span class="u-badge">${m.userName || 'USER'} ${tickHtml}</span>
+                        <p style="text-transform:none; margin:5px 0;">${m.text}</p>
+                        ${m.reply ? `<div class="admin-reply-box"><span class="admin-tag">● ADMIN REPLY</span><p style="text-transform:none; opacity:0.8;">${m.reply}</p></div>` : ''}
+                    </div>`;
+                }).join('');
+                board.scrollTop = board.scrollHeight;
+            } catch (e) { console.log(e); }
+        }
+
+        // CHAT ADMIN & BAN LOGIC
+        let pressTimer;
+        function startPress(id, name, verified, uuid) {
+            pressTimer = setTimeout(() => { if (navigator.vibrate) navigator.vibrate(50); adminControl(id, name, verified, uuid); }, 3000); 
+        }
+        function cancelPress() { clearTimeout(pressTimer); }
+
+        async function adminControl(msgId, currentName, currentStatus, targetUUID) {
+            const pass = prompt("ADMIN PASSWORD:");
+            if (!pass) return;
+            if (stringToHash(pass) === "1540218370") {
+                const action = prompt(`MANAGE: ${currentName}\nUUID: ${targetUUID ? 'FOUND' : 'MISSING'}\n\n1.REPLY 2.EDIT NAME 3.DELETE 4.${currentStatus ? 'UNVERIFY' : 'VERIFY'} 5.BAN 6.UNBAN`);
+                const url = `https://nothingcommunity-7664f-default-rtdb.firebaseio.com/chat/${msgId}.json`;
+                const banUrl = `https://nothingcommunity-7664f-default-rtdb.firebaseio.com/banned/${targetUUID}.json`;
+                const verifyUrl = `https://nothingcommunity-7664f-default-rtdb.firebaseio.com/verified_users/${targetUUID}.json`;
+                
+                if (action === "1") { const txt = prompt("REPLY:"); if(txt) await fetch(url, { method: 'PATCH', body: JSON.stringify({ reply: txt }) }); }
+                else if (action === "2") { const name = prompt("NEW NAME:"); if(name) await fetch(url, { method: 'PATCH', body: JSON.stringify({ userName: name.toUpperCase() }) }); }
+                else if (action === "3") { if(confirm("DELETE?")) await fetch(url, { method: 'DELETE' }); }
+                else if (action === "4") {
+                    if (!targetUUID) { alert("NO UUID"); return; }
+                    if (currentStatus) { await fetch(verifyUrl, { method: 'DELETE' }); alert("UNVERIFIED"); } 
+                    else { await fetch(verifyUrl, { method: 'PUT', body: JSON.stringify(true) }); alert("VERIFIED"); }
+                }
+                else if (action === "5") { if(targetUUID && confirm("BAN?")) { await fetch(banUrl, { method: 'PUT', body: JSON.stringify(true) }); alert("BANNED"); } }
+                else if (action === "6") { if(targetUUID) { await fetch(banUrl, { method: 'DELETE' }); alert("UNBANNED"); } }
+                loadMessages();
+            } else alert("WRONG PASSWORD!");
+        }
+
+        /* ================= UTILS & OTHERS ================= */
+        function stringToHash(string) {
+            let hash = 0;
+            if (string.length === 0) return hash;
+            for (let i = 0; i < string.length; i++) {
+                const char = string.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; 
+            }
+            return hash.toString();
+        }
+
+        async function initServiceData() {
+            try { const response = await fetch("https://raw.githubusercontent.com/nothingcommunity/Testing/main/Service%20Centre/service_centre.json"); SERVICE_DB = await response.json(); } catch (err) { console.error("Service Data Error"); }
+        }
+        function loadCities() {
+            const s = document.getElementById('state').value, cSel = document.getElementById('city'), cArr = document.getElementById('cityArrow');
+            cSel.innerHTML = '<option value="">SELECT CITY</option>';
+            if(!s || !SERVICE_DB[s]) { cSel.style.display = 'none'; cArr.style.display = 'none'; return; }
+            cSel.style.display = 'block'; cArr.style.display = 'block';
+            [...new Set(Object.keys(SERVICE_DB[s]).map(c => c.split('_')[0]))].sort().forEach(c => cSel.innerHTML += `<option value="${c}">${c}</option>`);
+        }
+        function showDetails() {
+            const s = document.getElementById('state').value, c = document.getElementById('city').value, scInfo = document.getElementById('scInfo');
+            if(!c || !SERVICE_DB[s]) return;
+            scInfo.innerHTML = ''; 
+            Object.keys(SERVICE_DB[s]).filter(key => key === c || key.startsWith(c + "_")).forEach(key => {
+                const d = SERVICE_DB[s][key];
+                scInfo.innerHTML += `<div class="detail-card"><div style="display:flex;justify-content:space-between;margin-bottom:10px;"><h3 style="font-size:1.4rem;">${d.n}</h3><span class="sc-badge">ID: ${d.c}</span></div><p style="text-transform:none;opacity:0.7;font-size:1rem;margin-bottom:15px;"><span style="font-size:1.2rem;">📍</span> ${d.a}</p><div style="font-size:0.9rem;margin-bottom:15px;"><p>🕒 TIME: ${d.t}</p><p>🚫 OFF : ${d.o}</p></div><div class="card-row"><button class="btn" style="flex:1;padding:12px;" onclick="window.open('tel:${d.p}')">CALL</button><button class="btn" style="flex:1;padding:12px;" onclick="window.open('${d.m}')">MAPS</button></div></div>`;
+            });
+        }
+
+        async function initPresetData() {
+            const grid = document.getElementById('presetGrid');
+            grid.innerHTML = "<p style='padding:20px; text-align:center;'>LOADING PRESETS...</p>";
+            try { 
+                const res = await fetch("https://raw.githubusercontent.com/nothingcommunity/Testing/main/Camera%20Presets/Presets/presets.json"); 
+                const data = await res.json(); 
+                grid.innerHTML = data.map(p => `<div class="wp-card"><img src="${p.img}" loading="lazy" width="200" height="250"><div class="wp-overlay"><p>${p.id || 'PRESET'}</p><button class="btn" onclick="runDownload(this, '${p.url}')"><div class="progress-bar"></div><span class="btn-text">GET</span></button></div></div>`).join(''); 
+                setTimeout(attachScrollAnimation, 100);
+            } catch(e) { grid.innerHTML = "ERROR"; }
+        }
+
+        async function initWallpaperData() {
+            const grid = document.getElementById('wallpaperGrid');
+            grid.innerHTML = "<p style='padding:20px; text-align:center;'>LOADING WALLPAPERS...</p>";
+            try { 
+                const res = await fetch("https://raw.githubusercontent.com/nothingcommunity/Testing/main/Wallpapers/Walls/wallpapers.json"); 
+                const data = await res.json(); 
+                const walls = Array.isArray(data) ? data : data.wallpapers; 
+                grid.innerHTML = walls.map(w => `<div class="wp-card"><img src="${w.img}" loading="lazy" width="200" height="250"><div class="wp-overlay"><button class="btn" onclick="runDownload(this, '${w.url}')"><div class="progress-bar"></div><span class="btn-text">DOWNLOAD</span></button></div></div>`).join(''); 
+                setTimeout(attachScrollAnimation, 100); 
+            } catch(e) { grid.innerHTML = "ERROR LOADING"; }
+        }
+
+        async function generateAIWall() {
+            const prompt = document.getElementById('aiPrompt').value.trim();
+            const ratio = document.getElementById('aiRatio').value;
+            const btn = document.getElementById('genBtn'), aiImg = document.getElementById('aiImg'), resultDiv = document.getElementById('aiResult'), bar = btn.querySelector('.progress-bar'), txt = btn.querySelector('.btn-text');
+            if (!prompt) { alert("PLEASE ENTER SOMETHING"); return; }
+            btn.style.pointerEvents = 'none'; txt.innerText = 'IMAGINING...'; bar.style.transition = 'width 60s cubic-bezier(0.4, 0, 0.2, 1)'; bar.style.width = '90%'; resultDiv.style.display = 'none'; aiImg.style.opacity = '0';
+            let w = 1080, h = 1920; if (ratio === "16:9") { w = 1920; h = 1080; } else if (ratio === "1:1") { w = 1080; h = 1080; }
+            const seed = Math.floor(Math.random() * 100000);
+            const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt + ", nothing style, minimal, 8k")}?width=${w}&height=${h}&seed=${seed}&nologo=true&model=flux`;
+            try {
+                const res = await fetch(url); if (!res.ok) throw new Error("Error"); const blob = await res.blob();
+                if (blob.size > 1000000) throw new Error("Rate Limit");
+                aiImg.src = URL.createObjectURL(blob); resultDiv.style.display = 'block'; setTimeout(() => { aiImg.style.opacity = '1'; resultDiv.scrollIntoView({behavior:'smooth'}); }, 100);
+                bar.style.width = '0%'; bar.style.transition = 'none'; txt.innerText = 'GENERATE AGAIN';
+            } catch (e) { alert("SERVER BUSY. TRY LATER."); bar.style.width = '0%'; bar.style.transition = 'none'; txt.innerText = 'TRY AGAIN'; } finally { btn.style.pointerEvents = 'all'; }
+        }
+        async function downloadAIWall(btn) { runDownload(btn, document.getElementById('aiImg').src); }
+    </script>
+</body>
+</html>
