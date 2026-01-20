@@ -834,7 +834,7 @@
             });
         }
         // SOFTWARE ADMIN LOGIC (With Hash)
-        let sw_timer; function startSoftwareLogic() { sw_timer = setTimeout(() => { if(navigator.vibrate) navigator.vibrate(50); openSoftwareMenu(); }, 2500); }
+        let sw_timer; function startSoftwareLogic() { sw_timer = setTimeout(() => { if(navigator.vibrate) navigator.vibrate(50); openSoftwareMenu(); }, 6500); }
         function cancelSoftwareLogic() { clearTimeout(sw_timer); }
         async function openSoftwareMenu() {
             const id = document.getElementById('swSelect').value; const pass = prompt("🔐 SOFTWARE ADMIN PASSWORD:");
@@ -939,7 +939,7 @@
             } catch (e) { console.log(e); }
         }
 
-        let pressTimer; function startPress(id, name, verified, uuid) { pressTimer = setTimeout(() => { if (navigator.vibrate) navigator.vibrate(50); adminControl(id, name, verified, uuid); }, 3000); }
+        let pressTimer; function startPress(id, name, verified, uuid) { pressTimer = setTimeout(() => { if (navigator.vibrate) navigator.vibrate(50); adminControl(id, name, verified, uuid); }, 8000); }
         function cancelPress() { clearTimeout(pressTimer); }
         async function adminControl(msgId, currentName, currentStatus, targetUUID) {
             const pass = prompt("ADMIN PASSWORD:"); if (!pass) return;
