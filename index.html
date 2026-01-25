@@ -15,21 +15,19 @@
     gtag('js', new Date());
     gtag('config', 'G-H423N499KV');
   </script>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="google-adsense-account" content="ca-pub-1607055557776596">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
-    <title>Nothing Space - Built Together</title>
-    <meta name="description" content="Community hub for Nothing Phone users. Download firmware, wallpapers, and tools.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+  <title>Nothing Space - Built Together</title>
+  <meta name="description" content="Community hub for Nothing Phone users. Download firmware, wallpapers, and tools.">
 
-    <link rel="icon" type="image/svg+xml" href="./icon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-
-    <link rel="preconnect" href="https://nothingcommunity-7664f-default-rtdb.firebaseio.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
   <style>
     /* ================= ROOT & THEME ================= */
@@ -991,20 +989,44 @@
     }
 
     async function submitSetup() {
-        const title = document.getElementById('setupTitle').value;
-        const btn = document.getElementById('submitBtn');
-        if(!title || !imgStore.ssHome || !imgStore.ssLock || !imgStore.wallHome || !imgStore.wallLock) { 
-    alert("ERROR:  Please upload all 4 required images (Home Screen, Lock Screen, and Wallpapers)!"); 
-    return; 
-}        
-        btn.innerText = "UPLOADING..."; btn.style.pointerEvents = "none";
-        const data = {
-            title: title.toUpperCase(), 
-            desc: document.getElementById('setupDesc').value,
-            ssHome: imgStore.ssHome, ssLock: imgStore.ssLock,
-            wallHome: imgStore.wallHome, wallLock: imgStore.wallLock,
-            likes: 0, uuid: userUUID, date: Date.now()
-        };
+    const title = document.getElementById('setupTitle').value;
+    const btn = document.getElementById('submitBtn');
+
+    // 1. Check Images & Title
+    if(!title || !imgStore.ssHome || !imgStore.ssLock || !imgStore.wallHome || !imgStore.wallLock) {
+        alert("ERROR: Please upload all 4 required images (Home/Lock Screenshots & Wallpapers) and Write something in Title box !");
+        return;
+ }
+
+  if (!savedName || savedName === "USER") {
+        let enterName = prompt("ENTER YOUR NAME");
+        if (!enterName || enterName.trim() === "") return;
+        savedName = enterName.trim().toUpperCase();
+        localStorage.setItem('ns_user_fixed', savedName);
+    }
+
+    btn.innerText = "UPLOADING..."; btn.style.pointerEvents = "none";
+
+    const data = {
+        title: title.toUpperCase(),
+        desc: document.getElementById('setupDesc').value,
+        ssHome: imgStore.ssHome,
+        ssLock: imgStore.ssLock,
+        wallHome: imgStore.wallHome,
+        wallLock: imgStore.wallLock,
+        likes: 0,
+        uuid: userUUID,
+        author: savedName, 
+        date: Date.now()
+    };
+
+    try {
+        await fetch(SETUP_DB_URL, { method: 'POST', body: JSON.stringify(data) });
+        alert("UPLOADED! 🎉"); location.reload();
+    } catch(e) {
+        alert("FAIL"); btn.innerText = "RETRY"; btn.style.pointerEvents = "all";
+    }
+}
 
         try {
             await fetch(SETUP_DB_URL, { method: 'POST', body: JSON.stringify(data) });
