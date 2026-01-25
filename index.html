@@ -991,68 +991,86 @@
     }
 
     async function submitSetup() {
-        const title = document.getElementById('setupTitle').value;
-        const btn = document.getElementById('submitBtn');
-        if(!title || !imgStore.ssHome || !imgStore.ssLock || !imgStore.wallHome || !imgStore.wallLock) { 
-    alert("ERROR:  Please upload all 4 required images (Home Screen, Lock Screen, and Wallpapers)!"); 
-    return; 
-}        
-        btn.innerText = "UPLOADING..."; btn.style.pointerEvents = "none";
-        const data = {
-            title: title.toUpperCase(), 
-            desc: document.getElementById('setupDesc').value,
-            ssHome: imgStore.ssHome, ssLock: imgStore.ssLock,
-            wallHome: imgStore.wallHome, wallLock: imgStore.wallLock,
-            likes: 0, uuid: userUUID, date: Date.now()
-        };
+    const title = document.getElementById('setupTitle').value;
+    const btn = document.getElementById('submitBtn');
 
-        try {
-            await fetch(SETUP_DB_URL, { method: 'POST', body: JSON.stringify(data) });
-            alert("UPLOADED!"); location.reload();
-        } catch(e) {
-            alert("FAIL"); btn.innerText = "RETRY"; btn.style.pointerEvents = "all";
-        }
+    // 1. Check Images & Title
+    if(!title || !imgStore.ssHome || !imgStore.ssLock || !imgStore.wallHome || !imgStore.wallLock) {
+        alert("ERROR: Please upload all 4 required images (Home/Lock Screenshots & Wallpapers)!");
+        return;
     }
 
-    async function loadSetups() {
-        const grid = document.getElementById('setupGrid');
-        try {
-            const res = await fetch(SETUP_DB_URL);
-            const data = await res.json();
-            if(!data) { grid.innerHTML = "<p style='text-align:center'>NO SETUPS YET</p>"; return; }
+        if (!savedName || savedName === "USER") {
+        let enterName = prompt("ENTER YOUR NAME");
+        if (!enterName || enterName.trim() === "") return; // Agar cancel kiya toh ruk jao
+        savedName = enterName.trim().toUpperCase();
+        localStorage.setItem('ns_user_fixed', savedName); // Name save kar lo
+    }
+
+    btn.innerText = "UPLOADING..."; btn.style.pointerEvents = "none";
+
+    const data = {
+        title: title.toUpperCase(),
+        desc: document.getElementById('setupDesc').value,
+        ssHome: imgStore.ssHome,
+        ssLock: imgStore.ssLock,
+        wallHome: imgStore.wallHome,
+        wallLock: imgStore.wallLock,
+        likes: 0,
+        uuid: userUUID,
+        author: savedName,
+        date: Date.now()
+    };
+
+    try {
+        await fetch(SETUP_DB_URL, { method: 'POST', body: JSON.stringify(data) });
+        alert("UPLOADED! 🎉"); location.reload();
+    } catch(e) {
+        alert("FAIL"); btn.innerText = "RETRY"; btn.style.pointerEvents = "all";
+    }
+}
+async function loadSetups() {
+    const grid = document.getElementById('setupGrid');
+    try {
+        const res = await fetch(SETUP_DB_URL);
+        const data = await res.json();
+        if(!data) { grid.innerHTML = "<p style='text-align:center'>NO SETUPS YET</p>"; return; }
+        
+        const list = Object.keys(data).map(k => ({id:k, ...data[k]}));
+        list.sort((a,b) => (b.likes||0) - (a.likes||0)); 
+
+        grid.innerHTML = list.map(p => {
+            const isMine = p.uuid === userUUID;
+            const liked = localStorage.getItem('l_'+p.id) ? 'liked' : '';
             
-            const list = Object.keys(data).map(k => ({id:k, ...data[k]}));
-            list.sort((a,b) => (b.likes||0) - (a.likes||0)); 
+         const displayName = p.author ? p.author : (isMine ? 'YOU' : 'USER');
 
-            grid.innerHTML = list.map(p => {
-                const isMine = p.uuid === userUUID;
-                const liked = localStorage.getItem('l_'+p.id) ? 'liked' : '';
-                return `
-                <div class="setup-card">
-                    <div class="setup-header">
-                        <h3>${p.title}</h3>
-                        <span style="opacity:0.5; font-size:0.8rem; border:1px solid #333; padding:2px 6px; border-radius:4px;">${isMine ? 'YOU' : 'USER'}</span>
+            return `
+            <div class="setup-card">
+                <div class="setup-header">
+                    <h3>${p.title}</h3>
+                    <span style="opacity:0.5; font-size:0.8rem; border:1px solid #333; padding:2px 6px; border-radius:4px;">${displayName}</span>
+                </div>
+                <div class="phone-showcase">
+                    <div class="phone-frame" onclick="selectFrame(this, '${p.wallHome}', '${p.title}_HOME')">
+                        <img src="${p.ssHome}">
                     </div>
-                    <div class="phone-showcase">
-                        <div class="phone-frame" onclick="selectFrame(this, '${p.wallHome}', '${p.title}_HOME')">
-                            <img src="${p.ssHome}">
-                        </div>
-                        ${p.ssLock ? `<div class="phone-frame" onclick="selectFrame(this, '${p.wallLock}', '${p.title}_LOCK')"><img src="${p.ssLock}"></div>` : ''}
+                    ${p.ssLock ? `<div class="phone-frame" onclick="selectFrame(this, '${p.wallLock}', '${p.title}_LOCK')"><img src="${p.ssLock}"></div>` : ''}
+                </div>
+                <button class="dl-btn">DOWNLOAD WALLPAPER</button>
+                <p style="margin:15px 0 10px; opacity:0.8; font-size:0.9rem;">${p.desc || ''}</p>
+                <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid #222; padding-top:15px;">
+                    <button class="like-btn ${liked}" onclick="doLike('${p.id}', ${p.likes||0}, this)">
+                        <i class="fa-solid fa-heart"></i> <span>${p.likes||0}</span>
+                    </button>
+                    <div onclick="deleteSetup('${p.id}', '${p.uuid}')" style="cursor:pointer; padding:5px;">
+                        <i class="fa-solid fa-trash" style="opacity:0.5;"></i>
                     </div>
-                    <button class="dl-btn">DOWNLOAD WALLPAPER</button>
-                    <p style="margin:15px 0 10px; opacity:0.8; font-size:0.9rem;">${p.desc || ''}</p>
-                    <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid #222; padding-top:15px;">
-                        <button class="like-btn ${liked}" onclick="doLike('${p.id}', ${p.likes||0}, this)">
-                            <i class="fa-solid fa-heart"></i> <span>${p.likes||0}</span>
-                        </button>
-                        <div onclick="deleteSetup('${p.id}', '${p.uuid}')" style="cursor:pointer; padding:5px;">
-                            <i class="fa-solid fa-trash" style="opacity:0.5;"></i>
-                        </div>
-                    </div>
-                </div>`;
-            }).join('');
-        } catch(e) { grid.innerHTML = "<p style='text-align:center'>ERROR LOADING</p>"; }
-    }
+                </div>
+            </div>`;
+        }).join('');
+    } catch(e) { grid.innerHTML = "<p style='text-align:center'>ERROR LOADING</p>"; }
+}
 
     async function deleteSetup(id, postUUID) {
         const isMine = postUUID === userUUID;
@@ -1264,84 +1282,4 @@
     window.ondragstart = function() { return false; };
   </script>
 </body>
-</html><script>async function submitSetup() {
-    const title = document.getElementById('setupTitle').value;
-    const btn = document.getElementById('submitBtn');
-
-    // 1. Check Images & Title
-    if(!title || !imgStore.ssHome || !imgStore.ssLock || !imgStore.wallHome || !imgStore.wallLock) {
-        alert("ERROR: Please upload all 4 required images (Home/Lock Screenshots & Wallpapers)!");
-        return;
-    }
-
-        if (!savedName || savedName === "USER") {
-        let enterName = prompt("ENTER YOUR NAME");
-        if (!enterName || enterName.trim() === "") return; // Agar cancel kiya toh ruk jao
-        savedName = enterName.trim().toUpperCase();
-        localStorage.setItem('ns_user_fixed', savedName); // Name save kar lo
-    }
-
-    btn.innerText = "UPLOADING..."; btn.style.pointerEvents = "none";
-
-    const data = {
-        title: title.toUpperCase(),
-        desc: document.getElementById('setupDesc').value,
-        ssHome: imgStore.ssHome,
-        ssLock: imgStore.ssLock,
-        wallHome: imgStore.wallHome,
-        wallLock: imgStore.wallLock,
-        likes: 0,
-        uuid: userUUID,
-        author: savedName,
-        date: Date.now()
-    };
-
-    try {
-        await fetch(SETUP_DB_URL, { method: 'POST', body: JSON.stringify(data) });
-        alert("UPLOADED! 🎉"); location.reload();
-    } catch(e) {
-        alert("FAIL"); btn.innerText = "RETRY"; btn.style.pointerEvents = "all";
-    }
-}
-async function loadSetups() {
-    const grid = document.getElementById('setupGrid');
-    try {
-        const res = await fetch(SETUP_DB_URL);
-        const data = await res.json();
-        if(!data) { grid.innerHTML = "<p style='text-align:center'>NO SETUPS YET</p>"; return; }
-        
-        const list = Object.keys(data).map(k => ({id:k, ...data[k]}));
-        list.sort((a,b) => (b.likes||0) - (a.likes||0)); 
-
-        grid.innerHTML = list.map(p => {
-            const isMine = p.uuid === userUUID;
-            const liked = localStorage.getItem('l_'+p.id) ? 'liked' : '';
-            
-         const displayName = p.author ? p.author : (isMine ? 'YOU' : 'USER');
-
-            return `
-            <div class="setup-card">
-                <div class="setup-header">
-                    <h3>${p.title}</h3>
-                    <span style="opacity:0.5; font-size:0.8rem; border:1px solid #333; padding:2px 6px; border-radius:4px;">${displayName}</span>
-                </div>
-                <div class="phone-showcase">
-                    <div class="phone-frame" onclick="selectFrame(this, '${p.wallHome}', '${p.title}_HOME')">
-                        <img src="${p.ssHome}">
-                    </div>
-                    ${p.ssLock ? `<div class="phone-frame" onclick="selectFrame(this, '${p.wallLock}', '${p.title}_LOCK')"><img src="${p.ssLock}"></div>` : ''}
-                </div>
-                <button class="dl-btn">DOWNLOAD WALLPAPER</button>
-                <p style="margin:15px 0 10px; opacity:0.8; font-size:0.9rem;">${p.desc || ''}</p>
-                <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid #222; padding-top:15px;">
-                    <button class="like-btn ${liked}" onclick="doLike('${p.id}', ${p.likes||0}, this)">
-                        <i class="fa-solid fa-heart"></i> <span>${p.likes||0}</span>
-                    </button>
-                    <div onclick="deleteSetup('${p.id}', '${p.uuid}')" style="cursor:pointer; padding:5px;">
-                        <i class="fa-solid fa-trash" style="opacity:0.5;"></i>
-                    </div>
-                </div>
-            </div>`;
-        }).join('');
-    } catch(e) { grid.innerHTML = "<p style='text-align:center'>ERROR LOADING</p>"; }
-}</script>
+</html>
