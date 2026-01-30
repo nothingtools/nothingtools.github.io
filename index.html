@@ -519,7 +519,7 @@
           <span id="play-pause" onclick="togglePlay()" style="cursor:pointer"><i class="fa-solid fa-circle-play"></i></span>
           <i class="fa-solid fa-forward-step" onclick="nextSong()" style="cursor:pointer"></i>
         </div>
-        <button class="btn" onclick="downloadCurrentSong()">DOWNLOAD</button>
+        <button class="btn" onclick="downloadCurrentSong()">PREVIEW TONE</button>
       </div>
       <audio id="mPlayer" onended="nextSong()"></audio>
     </div>
@@ -565,7 +565,7 @@
       <div id="logBox" style="display:none;" class="detail-card">
         <h3>NOTES:</h3>
         <ul id="swList" style="margin:15px 0; opacity:0.7; list-style: inside; text-transform: none;"></ul>
-        <button class="btn" onclick="runDownload(this, 'OTA_ZIP')"><div class="progress-bar"></div><span class="btn-text">DOWNLOAD OTA ZIP</span></button>
+        <button class="btn" onclick="runDownload(this, 'OTA_ZIP')"><div class="progress-bar"></div><span class="btn-text">PREVIEW OTA ZIP</span></button>
       </div>
     </div>
   </div>
