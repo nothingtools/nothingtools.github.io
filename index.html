@@ -423,14 +423,14 @@
         <div id="setupUploadForm" class="upload-box" style="display:none;">
             <span style="display:block;color:var(--accent);margin-bottom:5px;">1. SCREENSHOTS (DISPLAY)</span>
             <div class="upload-grid">
-                <div class="upload-area" onclick="document.getElementById('ssLockIn').click()"><div id="prevSsLock">LOCK SS</div></div>
-                <div class="upload-area" onclick="document.getElementById('ssHomeIn').click()"><div id="prevSsHome">HOME SS</div></div>
+                <div class="upload-area" onclick="document.getElementById('ssLockIn').click()"><div id="prevSsHome">LOCK SS</div></div>
+                <div class="upload-area" onclick="document.getElementById('ssHomeIn').click()"><div id="prevSsLock">HOME SS</div></div>
             </div>
             
             <span style="display:block;color:var(--accent);margin-bottom:5px;">2. WALLPAPERS (DOWNLOAD)</span>
             <div class="upload-grid">
-                <div class="upload-area" onclick="document.getElementById('wallLockIn').click()"><div id="prevWallLock">LOCK WP</div></div>
-                <div class="upload-area" onclick="document.getElementById('wallHomeIn').click()"><div id="prevWallHome">HOME WP</div></div>
+                <div class="upload-area" onclick="document.getElementById('wallLockIn').click()"><div id="prevWallHome">LOCK WP</div></div>
+                <div class="upload-area" onclick="document.getElementById('wallHomeIn').click()"><div id="prevWallLock">HOME WP</div></div>
             </div>
 
             <input type="file" id="ssLockIn" accept="image/*" hidden onchange="handleImg(this, 'prevSsLock', true)">
