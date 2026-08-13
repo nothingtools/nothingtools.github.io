@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <meta name="google-adsense-account" content="ca-pub-1607055557776596">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607055557776596" crossorigin="anonymous" onerror="window.adSenseBlocked = true;"></script>
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-1607055557776596?ers=1"></script><script>(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+    
+    <title>Nothing Space - Klwp Themes</title>
+    <meta name="description" content="Transform your Nothing Phone with premium 3D depth wallpapers and aesthetic home screens. Discover exclusive custom KLWP setups only at Nothing Space!">
+    <meta name="author" content="Nothing Space">
+    <link rel="canonical" href="https://nothingtools.github.io/wp.html" />
+
+    <meta name="application-name" content="Nothing Space">
+    <meta itemprop="name" content="Nothing Space">
+    <meta property="og:site_name" content="Nothing Space">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nothingtools.github.io/wp.html">
+    <meta property="og:title" content="Nothing Space - Klwp Themes">
+    <meta property="og:description" content="Transform your Nothing Phone with premium 3D depth wallpapers and aesthetic home screens. Discover exclusive custom KLWP setups only at Nothing Space!">
+    <meta property="og:image" content="https://nothingtools.github.io/banner.png">
+    
+    <link rel="icon" type="image/svg+xml" href="./icon.svg">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1607055557776596"crossorigin="anonymous"></script>
+    <style>
+        :root { 
+            --nothing-red: #ff3c00; 
+            --bg: #030005; 
+            --text: #ffffff; 
+            --text-muted: #999999;
+            --glass-bg: rgba(15, 15, 18, 0.7); 
+            --glass-border: rgba(255, 255, 255, 0.06);
+            --dot-bg: rgba(255, 255, 255, 0.05);
+            --card-line: rgba(255, 255, 255, 0.1);
+            --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+
+        /* Auto Light Mode */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f4f4f5;
+                --text: #09090b;
+                --text-muted: #52525b;
+                --glass-bg: rgba(255, 255, 255, 0.7);
+                --glass-border: rgba(0, 0, 0, 0.08);
+                --dot-bg: rgba(0, 0, 0, 0.06);
+                --card-line: rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+        html, body { overscroll-behavior-y: none; }
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            -webkit-tap-highlight-color: transparent;
+            /* Anti-copy feature starts */
+            -webkit-user-select: none; /* Safari/Chrome */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none; /* Standard */
+        }
+        
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            width: 100%; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            background-image: radial-gradient(var(--dot-bg) 1px, transparent 1px);
+            background-size: 24px 24px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        main { flex: 1; display: flex; justify-content: center; align-items: flex-start; padding: 60px 20px; }
+        
+        .main-wrapper { max-width: 900px; width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        
+        .header-dot { 
+            width: 12px; height: 12px; 
+            background-color: var(--nothing-red); 
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+            box-shadow: 0 0 15px var(--nothing-red); 
+            animation: pulse 2s infinite 
+        }
+        
+        @keyframes pulse { 
+            0% { box-shadow: 0 0 0 0 rgba(255, 60, 0, .7) } 
+            70% { box-shadow: 0 0 0 15px rgba(255, 60, 0, 0) } 
+            100% { box-shadow: 0 0 0 0 rgba(255, 60, 0, 0) } 
+        }
+        
+        .brand-text { font-family: 'Major Mono Display', monospace; font-size: 1.2rem; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px }
+        
+        /* Transition Animations */
+        @keyframes fadeOutUp {
+            0% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-40px); }
+        }
+        
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        #loadingContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contentBox { 
+            display: block; 
+            width: 100%; 
+            opacity: 1; 
+        }
+        
+        #errorBox { 
+            display: none; 
+            width: 100%; 
+            opacity: 0; 
+        }
+
+        .success-text { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800; margin-bottom: 10px; letter-spacing: -1px; color: var(--text) }
+        .sub-text { font-size: 1rem; color: var(--text-muted); margin-bottom: 40px; max-width: 600px; line-height: 1.6; }
+        
+        .instructions-wrapper { 
+            width: 100%; 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+            margin-bottom: 40px; 
+        }
+        
+        @media (min-width: 768px) {
+            .instructions-wrapper { grid-template-columns: repeat(2, 1fr); }
+            .full-width { grid-column: 1 / -1; }
+        }
+
+        /* ---> AUTO ADS LAYOUT FIX: Isse auto ads grid ko break nahi karenge aur box side me nahi jayega <--- */
+        .instructions-wrapper > *:not(.step-card) {
+            grid-column: 1 / -1 !important;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .step-card { 
+            background: var(--glass-bg); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border); 
+            border-radius: 16px; 
+            padding: 30px; 
+            text-align: left; 
+            transition: var(--transition);
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .step-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--card-line); transition: var(--transition);
+        }
+        
+        .step-card:hover { 
+            transform: translateY(-5px); 
+            border-color: rgba(255, 60, 0, 0.3); 
+            box-shadow: 0 15px 35px rgba(255, 60, 0, 0.05); 
+        }
+        
+        .step-card:hover::before { background: var(--nothing-red); }
+        
+        .step-title { font-size: 1.1rem; font-weight: 700; color: var(--text); margin: 0 0 12px 0; display: flex; align-items: center; gap: 12px; }
+        .step-title i { color: var(--text); font-size: 1.2rem; transition: var(--transition); }
+        .step-card:hover .step-title i { color: var(--nothing-red); }
+        
+        .step-desc { font-size: 0.95rem; color: var(--text-muted); margin: 0; line-height: 1.7; }
+        .highlight { color: var(--text); font-weight: 700 }
+        
+        .btn-premium { 
+            text-decoration: none; color: var(--bg); background-color: var(--text); 
+            padding: 18px 45px; border-radius: 30px; font-weight: 700; font-size: 1.1rem; 
+            border: 2px solid transparent; transition: var(--transition); 
+            display: inline-flex; align-items: center; gap: 10px; 
+            font-family: 'VT323', monospace; text-transform: uppercase; cursor: pointer; 
+            letter-spacing: 1px; margin-bottom: 30px;
+        }
+        
+        .btn-premium:hover { 
+            transform: scale(0.96); 
+            background-color: transparent;
+            color: var(--text);
+            border-color: var(--text);
+        }
+
+        #depthBtn {
+            display: none;
+            opacity: 0;
+        }
+        
+        .footer-note { font-family: 'VT323', monospace; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+        #loadingText { font-family: 'Major Mono Display', monospace; font-size: 1.8rem; color: var(--text-muted); letter-spacing: 3px; animation: blink 1s infinite; padding: 20px 0 30px; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+
+        #loadingAd { 
+            width: 100%; max-width: 728px; min-height: 100px; margin-bottom: 40px; 
+            background: var(--glass-bg); backdrop-filter: blur(10px);
+            border: 1px dashed var(--card-line); border-radius: 16px; 
+            display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; 
+        }
+        
+        #loadingAd::after { content: "Unlocking Themes..."; position: absolute; font-family: 'Major Mono Display', monospace; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px; animation: blink 1.5s infinite; z-index: 0; }
+        #loadingAd ins { z-index: 1; width: 100%; }
+        ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+    </style>
+</head>
+
+<body>
+    <div style="position: absolute; left: -9999px; top: -9999px;">
+        <div id="ad-bait-container" class="pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links ad-banner adsbox doubleclick ad-placement" style="width: 10px; height: 10px;">ad</div>
+    </div>
+
+    <main>
+        <div class="main-wrapper">
+            <div class="header-dot"></div>
+            <div class="brand-text">nothing spAce</div>
+            
+            <div id="loadingContainer">
+                <div id="loadingText">UnLOckiNG</div>
+                <div id="loadingAd">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1607055557776596"
+                         data-ad-slot="2186545443"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            
+            <div id="contentBox">
+                <div id="successBox">
+                    <div class="success-text">KLWP THEME UNLOCKED</div>
+                    <p class="sub-text">Your secure session is active. Follow the documentation below to correctly apply your custom Nothing Space depth wallpapers and live themes.</p>
+                    
+                    <div class="instructions-wrapper">
+                        <div class="step-card">
+                            <div class="step-title"><i class="fa-solid fa-mobile-screen"></i> Step 1: Secure Download</div>
+                            <p class="step-desc">On the main <span class="highlight">Nothing Space</span> interface, browse unique wallpapers featuring our stunning Depth Effect. Select the setups that define your aesthetic, and download them cleanly to your local storage.</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-title"><i class="fa-solid fa-folder-open"></i> Step 2: Import to KLWP</div>
+                            <p class="step-desc">Launch the KLWP Live Wallpaper App. Tap on the folder icon in the top-right corner, choose 'Import', and locate the downloaded theme file (e.g., <span class="highlight">NS.klwp</span>). The preset will initialize.</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-title"><i class="fa-solid fa-sliders"></i> Step 3: Configure Parameters</div>
+                            <p class="step-desc">You have full control to customize or remove components inside KLWP: wallpaper background, dock elements, and icon scaling. Always hit the 'Save' icon after executing changes.</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-title"><i class="fa-solid fa-check-double"></i> Step 4: Apply System Wide</div>
+                            <p class="step-desc">Tap the Save icon in KLWP. Then tap "Set Wallpaper" and assign it to "Home Screen & Lock Screen". Return to your system launcher to verify the live execution. 🎉</p>
+                        </div>
+                        
+                        <div class="step-card full-width">
+                            <div class="step-title"><i class="fa-solid fa-microchip"></i> Performance Optimization</div>
+                            <p class="step-desc">If the KLWP theme exhibits frame drops or is not rendering perfectly, open the KLWP app → Navigate to three dots (⋮) → App Settings → Advanced Options → <span class="highlight">Disable Parallel Rendering - Turn ON</span> (default is off). This forces single-thread rendering for better stability on some custom ROMs.</p>
+                        </div>
+
+                        <div class="step-card full-width">
+                            <div class="step-title"><i class="fa-solid fa-circle-question"></i> Where is the Depth Theme?</div>
+                            <p class="step-desc">Well, your premium theme is finally unlocked! Just click on <b>Depth Wallpapers</b> below, and it will redirect you to the website. Click on 'KLWP Depth Theme' again, and it will be fully unlocked.<br><br><span style="color:var(--text); font-weight:700;">🚀 So go ahead -- customize your Android!</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="https://nothingtools.github.io/" id="depthBtn" class="btn-premium" onclick="setTimer();"><span>Depth Wallpapers</span></a>
+
+                <div id="errorBox">
+                    <div class="success-text" style="color: var(--nothing-red); font-family: 'VT323', monospace; font-size: 3rem;">ACCESS DENIED</div>
+                    <p class="sub-text">Security protocol initiated. The server detected an active ad-blocking script masking your request.</p>
+                    
+                    <div class="instructions-wrapper">
+                        <div class="step-card full-width" style="text-align: center; border-color: rgba(255,60,0,0.5);">
+                            <i class="fa-solid fa-shield-halved" style="font-size: 3rem; color: var(--nothing-red); margin-bottom: 20px;"></i>
+                            <div class="step-title" style="justify-content: center; color: var(--text); font-size: 1.3rem;">AD-BLOCKER DETECTED</div>
+                            <p class="step-desc" style="margin-top: 15px;">We maintain this secure repository free of charge by serving highly optimized, non-intrusive network ads.</p>
+                            <p class="step-desc" style="margin-top: 15px; font-weight: bold; color: var(--text);">You must disable your ad-blocker or DNS sinkhole for this domain to authenticate your session.</p>
+                        </div>
+                    </div>
+    
+                    <button class="btn-premium" style="background-color: transparent; border: 2px solid var(--nothing-red); color: var(--nothing-red);" onclick="location.reload();">
+                        <i class="fa-solid fa-rotate-right"></i> REFRESH PAGE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function setTimer() {
+            localStorage.setItem("ns_premium_unlocked", Date.now() + 6000000);
+        }
+
+        setTimeout(() => {
+            let loadingContainer = document.getElementById("loadingContainer");
+            let depthBtn = document.getElementById("depthBtn");
+            let errorBox = document.getElementById("errorBox");
+            let successBox = document.getElementById("successBox");
+            let isAdLoaded = true;
+            let insElements = document.querySelectorAll('ins.adsbygoogle');
+            
+            insElements.forEach(ins => {
+                if (ins.getAttribute('data-ad-status') === 'filled') {
+                    isAdLoaded = true;
+                }
+            });
+
+            let adIframes = document.querySelectorAll('iframe[id^="aswift"], iframe[name^="aswift"]');
+            adIframes.forEach(iframe => {
+                if (iframe.offsetHeight > 10 && window.getComputedStyle(iframe).display !== 'none') {
+                    isAdLoaded = true;
+                }
+            });
+
+            if(loadingContainer) {
+                loadingContainer.style.animation = "fadeOutUp 0.6s ease forwards";
+            }
+
+            setTimeout(() => {
+                if(loadingContainer) {
+                    loadingContainer.style.display = "none";
+                }
+                
+                if (!isAdLoaded) {
+                    if(successBox) {
+                        successBox.style.display = "none";
+                    }
+                    if(errorBox) {
+                        errorBox.style.display = "block";
+                        errorBox.style.animation = "fadeInUp 0.8s ease forwards";
+                    }
+                } else {
+                    if(depthBtn) {
+                        depthBtn.style.display = "inline-flex";
+                        depthBtn.style.animation = "fadeInUp 0.8s ease forwards";
+                    }
+                }
+            }, 600);
+
+        }, 7000);
+    </script>
+</body>
+</html>
