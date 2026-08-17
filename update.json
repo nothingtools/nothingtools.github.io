@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Phone (4a)",
+    "version": "**Version:** Nothing OS B4.1-260808-1352",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__4a____Version____Nothing_OS_B4.1-260808.png",
+    "date": "2026-08-17"
+  },
+  {
     "title": "Nothing X",
     "version": "3.7.3",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_X_3.7.3.png",
@@ -127,11 +133,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Launcher_4.0.18.png",
     "date": "2026-07-16",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.launcher"
-  },
-  {
-    "title": "Nothing Phone (3a) Lite",
-    "version": "Nothing OS B4.1-260702-1815",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__3a__Lite_Nothing_OS_B4.1-260702-1815.png",
-    "date": "2026-07-15"
   }
 ]
