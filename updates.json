@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Phone (2a)",
+    "version": "Nothing OS B4.1-260813-0941",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__2a__Nothing_OS_B4.1-260813-0941.png",
+    "date": "2026-08-24"
+  },
+  {
     "title": "CMF Clip Pro",
     "version": "1.0.1.79",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Clip_Pro_1.0.1.79.png",
@@ -123,12 +129,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Gallery_3.1.0.0723.png",
     "date": "2026-07-27",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.gallery"
-  },
-  {
-    "title": "Essential Apps",
-    "version": "1.0.26",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.26.png",
-    "date": "2026-07-23",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
   }
 ]
