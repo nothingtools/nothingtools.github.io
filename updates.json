@@ -1,5 +1,11 @@
 [
   {
+    "title": "CMF Phone 2 Pro",
+    "version": "Nothing OS B4.1-260812-1729",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Phone_2_Pro_Nothing_OS_B4.1-260812-1729.png",
+    "date": "2026-08-25"
+  },
+  {
     "title": "CMF Phone 1",
     "version": "Nothing OS B4.1-260812-1726",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Phone_1_Nothing_OS_B4.1-260812-1726.png",
@@ -119,12 +125,5 @@
     "version": "1.0.1.65",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Ear__3a__1.0.1.65.png",
     "date": "2026-08-05"
-  },
-  {
-    "title": "Nothing Weather",
-    "version": "3.3.3",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_Weather_3.3.3.png",
-    "date": "2026-08-03",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.weather"
   }
 ]
