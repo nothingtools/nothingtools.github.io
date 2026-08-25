@@ -1,5 +1,12 @@
 [
   {
+    "title": "Nothing X",
+    "version": "3.8.0",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_X_3.8.0.png",
+    "date": "2026-08-25",
+    "url": "https://play.google.com/store/apps/details?id=com.nothing.smartcenter"
+  },
+  {
     "title": "Nothing Gallery",
     "version": "3.1.2.0819",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_Gallery_3.1.2.0819.png",
@@ -121,12 +128,5 @@
     "version": "Nothing OS B4.1-260723-1820",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__4a__Pro_Nothing_OS_B4.1-260723-1820.png",
     "date": "2026-07-29"
-  },
-  {
-    "title": "Essential Apps",
-    "version": "1.0.29",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Apps_1.0.29.png",
-    "date": "2026-07-28",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
   }
 ]
