@@ -1,5 +1,12 @@
 [
   {
+    "title": "Nothing Phone (2a) Plus",
+    "version": "Nothing OS B4.1-260813-0941",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Plus_Nothing_OS_B4.1-260813-0941.png",
+    "date": "2026-09-06",
+    "url": "https://android.googleapis.com/packages/ota-api/package/6c29642c2b85dfd5c533bc4e954b79909ec7c02e.zip"
+  },
+  {
     "title": "Nothing Phone (3a) Series",
     "version": "Nothing OS B4.1-260810-1153",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__3a__Series_Nothing_OS_B4.1-260810-1153.png",
@@ -121,12 +128,5 @@
     "version": "Nothing OS B4.1-260808-1352",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__4a____Version____Nothing_OS_B4.1-260808.png",
     "date": "2026-08-17"
-  },
-  {
-    "title": "Nothing X",
-    "version": "3.7.3",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_X_3.7.3.png",
-    "date": "2026-08-15",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.smartcenter"
   }
 ]
