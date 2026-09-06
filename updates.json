@@ -1,5 +1,12 @@
 [
   {
+    "title": "Nothing Phone (3)",
+    "version": "Nothing OS B4.1-260814-1733",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__3__Nothing_OS_B4.1-260814-1733.png",
+    "date": "2026-09-06",
+    "url": "https://android.googleapis.com/packages/ota-api/package/2a52b639be641edff7fb07fac5d645503acd14bc.zip"
+  },
+  {
     "title": "Nothing Phone (2)",
     "version": "Nothing OS B4.1-260818-1726",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__2__Nothing_OS_B4.1-260818-1726.png",
@@ -118,13 +125,6 @@
     "version": "1.0.37",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.37.png",
     "date": "2026-08-10",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
-  },
-  {
-    "title": "Essential Apps",
-    "version": "1.0.36",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.36.png",
-    "date": "2026-08-07",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
   }
 ]
