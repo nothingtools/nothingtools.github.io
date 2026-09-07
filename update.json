@@ -1,5 +1,12 @@
 [
   {
+    "title": "Nothing Phone (3a) Series",
+    "version": "Nothing OS B4.1-260810-1153",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__3a__Series_Nothing_OS_B4.1-260810-1153.png",
+    "date": "2026-09-07",
+    "url": "https://android.googleapis.com/packages/ota-api/package/cd06a8e76f79f0fa02b826f8fb8aa4a4bd796429.zip"
+  },
+  {
     "title": "Essential Space",
     "version": "2.1.9",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Space_2.1.9.png",
@@ -125,12 +132,6 @@
     "title": "Nothing Phone (2a) Plus",
     "version": "Nothing OS B4.1-260813-0941",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Plus_Nothing_OS_B4.1-260813-0941.png",
-    "date": "2026-08-24"
-  },
-  {
-    "title": "Nothing Phone (2a)",
-    "version": "Nothing OS B4.1-260813-0941",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Nothing_OS_B4.1-260813-0941.png",
     "date": "2026-08-24"
   }
 ]
