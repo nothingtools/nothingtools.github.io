@@ -1,0 +1,24 @@
+name: Reset Commits to 1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  reset-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reset to Single Commit
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "Initial commit for Nothing Space"
+          git branch -D main
+          git branch -m main
+          git push -f origin main

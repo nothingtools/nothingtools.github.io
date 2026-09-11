@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Secret files 
+.env
+secrets.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac/Windows system cache files
+.DS_Store
+Thumbs.db
+
+# Any temporary cache
+.cache/
+tmp/
