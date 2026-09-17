@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Nothing Space</ShortName>
+  
+  <Description>Search the ultimate hub for Nothing &amp; CMF users: OTA updates, wallpapers, KLWP themes, and developer tools.</Description>
+  
+  <Tags>nothing cmf tools wallpapers os updates android</Tags>
+  
+  <Developer>ROHit</Developer>
+  <Language>en</Language>
+  
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  
+  <Image width="16" height="16" type="image/svg+xml">https://nothingtools.github.io/icon.svg</Image>
+  <Image width="64" height="64" type="image/png">https://nothingtools.github.io/banner.png</Image>
+  
+  <Url type="text/html" method="get" template="https://nothingtools.github.io/?s={searchTerms}"/>
+  
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://nothingtools.github.io/opensearch.xml"/>
+  
+  <SyndicationRight>open</SyndicationRight>
+</OpenSearchDescription>

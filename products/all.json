@@ -1,0 +1,526 @@
+[
+  {
+    "id": "cmfphone1",
+    "category": "phone",
+    "name": "CMF PHONE 1",
+    "link": "https://in.cmf.tech/pages/phone-1",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/CMF%20Phone%201-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536574.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536575.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536576.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536577.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536578.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%201/reduced_1000536579.jpg"
+    ],
+    "specs": {
+      "Model": "A015",
+      "Status": "Released",
+      "Display": "6.67” Super AMOLED, 120Hz",
+      "Chipset": "Dimensity 7300",
+      "Battery": "5000 mAh"
+    }
+  },
+  {
+    "id": "cmfphone2pro",
+    "category": "phone",
+    "name": "CMF PHONE 2 PRO",
+    "link": "https://in.cmf.tech/pages/phone-2-pro",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/CMF%20Phone%202%20Pro-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536580.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536581.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536582.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536583.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536584.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/CMF%20phone%202%20pro/reduced_1000536585.jpg"
+    ],
+    "specs": {
+      "Model": "A016P",
+      "Status": "Concept / Unreleased",
+      "Display": "TBA",
+      "Chipset": "Dimensity 7300 Pro",
+      "Battery": "5000 mAh"
+    }
+  },
+  {
+    "id": "phone1",
+    "category": "phone",
+    "name": "PHONE (1)",
+    "link": "https://in.nothing.tech/products/phone-1",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/Phone%20(1)-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536510.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536511.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536512.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536513.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536514.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536515.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536516.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536517.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536518.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536519.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%201/reduced_1000536520.jpg"
+    ],
+    "specs": {
+      "Model": "A063",
+      "Status": "Released",
+      "Display": "6.55” OLED, 120Hz",
+      "Chipset": "Snapdragon 778G+",
+      "Battery": "4500 mAh"
+    }
+  },
+  {
+    "id": "phone2",
+    "category": "phone",
+    "name": "PHONE (2)",
+    "link": "https://in.nothing.tech/products/phone-2",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/Phone%20(2)-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536521.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536522.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536523.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536524.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536525.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536526.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536527.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202/reduced_1000536528.jpg"
+    ],
+    "specs": {
+      "Model": "A065",
+      "Status": "Released",
+      "Display": "6.7” LTPO OLED, 120Hz",
+      "Chipset": "Snapdragon 8+ Gen 1",
+      "Battery": "4700 mAh"
+    }
+  },
+  {
+    "id": "phone2a",
+    "category": "phone",
+    "name": "PHONE (2a)",
+    "link": "https://in.nothing.tech/pages/phone-2a",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/Phone%20(2a)-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536532.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536533.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536534.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536535.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536536.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536537.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536538.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a/reduced_1000536539.jpg"
+    ],
+    "specs": {
+      "Model": "A142",
+      "Status": "Released",
+      "Display": "6.7” Flexible AMOLED, 120Hz",
+      "Chipset": "Dimensity 7200 Pro",
+      "Battery": "5000 mAh"
+    }
+  },
+  {
+    "id": "phone2aplus",
+    "category": "phone",
+    "name": "PHONE (2a) PLUS",
+    "link": "https://in.nothing.tech/pages/phone-2a-plus",
+    "model3d": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/products/3d%20model/Phone%20(2a)%20Plus-compressed.glb",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536540.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536541.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536542.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536543.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536544.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536545.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%202a%20plus/reduced_1000536546.jpg"
+    ],
+    "specs": {
+      "Model": "A142P",
+      "Status": "Released",
+      "Display": "6.7” Flexible AMOLED, 120Hz",
+      "Chipset": "Dimensity 7350 Pro",
+      "Battery": "5000 mAh"
+    }
+  },
+  {
+    "id": "phone3",
+    "category": "phone",
+    "name": "PHONE (3)",
+    "link": "https://nothing.tech",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536567.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536568.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536569.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536570.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536571.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536572.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203/reduced_1000536573.jpg"
+    ],
+    "specs": {
+      "Model": "TBA",
+      "Status": "Concept / Unreleased",
+      "Display": "TBA",
+      "Chipset": "TBA",
+      "Battery": "TBA"
+    }
+  },
+  {
+    "id": "phone3a",
+    "category": "phone",
+    "name": "PHONE (3a)",
+    "link": "https://nothing.tech",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536547.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536548.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536549.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536550.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536551.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536552.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536553.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536555.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a/reduced_1000536556.jpg"
+    ],
+    "specs": {
+      "Model": "TBA",
+      "Status": "Concept / Unreleased",
+      "Display": "TBA",
+      "Chipset": "TBA",
+      "Battery": "TBA"
+    }
+  },
+  {
+    "id": "phone3apro",
+    "category": "phone",
+    "name": "PHONE (3a) PRO",
+    "link": "https://nothing.tech",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536557.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536558.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536560.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536561.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536562.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536563.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536564.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20pro/reduced_1000536565.jpg"
+    ],
+    "specs": {
+      "Model": "TBA",
+      "Status": "Concept / Unreleased",
+      "Display": "TBA",
+      "Chipset": "TBA",
+      "Battery": "TBA"
+    }
+  },
+  {
+    "id": "phone3alite",
+    "category": "phone",
+    "name": "PHONE (3a) LITE",
+    "link": "https://nothing.tech",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536587.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536588.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536589.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536590.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536591.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/Phones/Phone%203a%20lite/reduced_1000536592.jpg"
+    ],
+    "specs": {
+      "Model": "TBA",
+      "Status": "Concept / Unreleased",
+      "Display": "TBA",
+      "Chipset": "TBA",
+      "Battery": "TBA"
+    }
+  },
+  {
+    "id": "cmf33w",
+    "category": "accessories",
+    "name": "CMF 33W",
+    "link": "https://in.cmf.tech/products/power-33w-charger",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2033w/reduced_1000536665.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2033w/reduced_1000536666.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2033w/reduced_1000536667.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2033w/reduced_1000536668.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2033w/reduced_1000536669.jpg"
+    ],
+    "specs": {
+      "Model": "CMF 33W",
+      "Status": "Released",
+      "Output": "33W",
+      "Ports": "1 USB-C"
+    }
+  },
+  {
+    "id": "cmf65wgan",
+    "category": "accessories",
+    "name": "CMF 65W GaN",
+    "link": "https://in.cmf.tech/products/power-65w-gan-charger",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536849.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536850.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536852.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536853.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536854.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536855.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536856.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/CMF%2065w%20gan/reduced_1000536857.jpg"
+    ],
+    "specs": {
+      "Model": "CMF 65W GaN",
+      "Status": "Released",
+      "Output": "65W",
+      "Ports": "2 USB-C, 1 USB-A"
+    }
+  },
+  {
+    "id": "nothing45w",
+    "category": "accessories",
+    "name": "NOTHING 45W",
+    "link": "https://in.nothing.tech/products/power-45w",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/Nothing%2045w/reduced_1000536662.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/Nothing%2045w/reduced_1000536663.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/accessories/Nothing%2045w/reduced_1000536664.jpg"
+    ],
+    "specs": {
+      "Model": "Nothing 45W",
+      "Status": "Released",
+      "Output": "45W",
+      "Ports": "1 USB-C"
+    }
+  },
+  {
+    "id": "cmfbuds2plus",
+    "category": "buds",
+    "name": "CMF BUDS 2 PLUS",
+    "link": "https://in.cmf.tech/products/buds-pro-2",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536632.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536633.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536634.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536635.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536636.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536637.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536638.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536639.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536640.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202%20plus/reduced_1000536641.jpg"
+    ],
+    "specs": {
+      "Model": "Buds Pro 2",
+      "Status": "Released",
+      "Type": "TWS",
+      "Driver": "11mm + 6mm Dual Driver",
+      "ANC": "50dB"
+    }
+  },
+  {
+    "id": "cmfbuds2",
+    "category": "buds",
+    "name": "CMF BUDS 2",
+    "link": "https://in.cmf.tech/products/buds",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536620.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536621.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536622.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536623.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536624.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202/reduced_1000536625.jpg"
+    ],
+    "specs": {
+      "Model": "Buds",
+      "Status": "Released",
+      "Type": "TWS",
+      "Driver": "12.4 mm",
+      "ANC": "42dB"
+    }
+  },
+  {
+    "id": "cmfbuds2a",
+    "category": "buds",
+    "name": "CMF BUDS 2a",
+    "link": "https://in.cmf.tech/products/buds",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536626.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536627.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536628.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536629.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536630.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20buds%202a/reduced_1000536631.jpg"
+    ],
+    "specs": {
+      "Model": "TBA",
+      "Status": "Variant / Concept",
+      "Type": "TWS",
+      "Driver": "TBA",
+      "ANC": "TBA"
+    }
+  },
+  {
+    "id": "cmfheadphonepro",
+    "category": "buds",
+    "name": "CMF HEADPHONE PRO",
+    "link": "https://in.cmf.tech/products/neckband-pro",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536908.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536909.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536910.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536911.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536912.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536913.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536914.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536915.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536916.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/CMF%20headphone%20pro/reduced_1000536917.jpg"
+    ],
+    "specs": {
+      "Model": "Neckband Pro",
+      "Status": "Released",
+      "Type": "Neckband",
+      "Driver": "13.6mm",
+      "ANC": "50dB"
+    }
+  },
+  {
+    "id": "eara",
+    "category": "buds",
+    "name": "EAR (a)",
+    "link": "https://in.nothing.tech/products/ear-a",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536604.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536606.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536607.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536608.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536609.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536610.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20a/reduced_1000536611.jpg"
+    ],
+    "specs": {
+      "Model": "Ear (a)",
+      "Status": "Released",
+      "Type": "TWS",
+      "Driver": "11mm",
+      "ANC": "45dB"
+    }
+  },
+  {
+    "id": "earopen",
+    "category": "buds",
+    "name": "EAR (open)",
+    "link": "https://in.nothing.tech/products/ear-open",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536613.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536614.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536615.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536616.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536617.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear%20open/reduced_1000536618.jpg"
+    ],
+    "specs": {
+      "Model": "Ear (open)",
+      "Status": "Released",
+      "Type": "Open Wearable Stereo",
+      "Driver": "14.2mm",
+      "ANC": "None"
+    }
+  },
+  {
+    "id": "ear",
+    "category": "buds",
+    "name": "EAR",
+    "link": "https://in.nothing.tech/products/ear",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536599.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536600.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536601.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536602.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536603.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Ear/reduced_1000536605.jpg"
+    ],
+    "specs": {
+      "Model": "Ear",
+      "Status": "Released",
+      "Type": "TWS",
+      "Driver": "11mm Ceramic",
+      "ANC": "45dB"
+    }
+  },
+  {
+    "id": "headphone1",
+    "category": "buds",
+    "name": "HEADPHONE (1)",
+    "link": "https://in.nothing.tech/products/ear-1",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Headphone%201/reduced_1000536593.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Headphone%201/reduced_1000536594.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Headphone%201/reduced_1000536595.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Headphone%201/reduced_1000536596.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/84a2ed5b357f7287972dc9f3447b6b4d965cad38/products/all/buds/Headphone%201/reduced_1000536597.jpg"
+    ],
+    "specs": {
+      "Model": "Ear (1)",
+      "Status": "Released",
+      "Type": "TWS",
+      "Driver": "11.6mm",
+      "ANC": "40dB"
+    }
+  },
+  {
+    "id": "cmfwatchpro2",
+    "category": "watch",
+    "name": "CMF WATCH PRO 2",
+    "link": "https://in.cmf.tech/pages/watch-pro-2",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536651.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536652.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536653.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536654.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536655.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536656.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536659.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro%202/reduced_1000536660.jpg"
+    ],
+    "specs": {
+      "Model": "Watch Pro 2",
+      "Status": "Released",
+      "Display": "1.32” AMOLED",
+      "Battery": "11 Days"
+    }
+  },
+  {
+    "id": "cmfwatchpro",
+    "category": "watch",
+    "name": "CMF WATCH PRO",
+    "link": "https://in.cmf.tech/pages/watch-pro",
+    "model3d": "",
+    "imgs": [
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro/reduced_1000536839.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro/reduced_1000536840.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro/reduced_1000536841.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro/reduced_1000536842.jpg",
+      "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/1222aba3878537862731719a78062ccc15c06966/products/all/watch/CMF%20watch%20pro/reduced_1000536843.jpg"
+    ],
+    "specs": {
+      "Model": "Watch Pro",
+      "Status": "Released",
+      "Display": "1.96” AMOLED",
+      "Battery": "13 Days"
+    }
+  }
+]
