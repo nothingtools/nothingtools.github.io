@@ -1,5 +1,11 @@
 [
   {
+    "title": "Low Latency Mode Not Working on CMF Buds 2a",
+    "version": "",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Low_Latency_Mode_Not_Working_on_CMF_Buds_v1.png",
+    "date": "2026-09-29"
+  },
+  {
     "title": "CMF Buds Battery",
     "version": "Help",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Buds_Battery_Help.png",
@@ -127,12 +133,5 @@
     "version": "Nothing OS B4.1-260814-1733",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__3__Nothing_OS_B4.1-260814-1733.png",
     "date": "2026-09-06"
-  },
-  {
-    "title": "Essential Space",
-    "version": "2.1.7",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Space_2.1.7.png",
-    "date": "2026-08-27",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.ntessentialspace"
   }
 ]
