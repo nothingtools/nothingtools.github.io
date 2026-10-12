@@ -41,44 +41,44 @@
       "url": "https://github.com/spike0en/nothing_archive/releases/tag/Pong_B4.1-260818-1726"
     },
     "p2a": {
-      "disp": "B4.1-260813-0941",
+      "disp": "B4.1-260928-1157",
       "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(2a).png\n",
       "logs": [
         "VERIFY THE FILE FOR YOUR DEVICE.",
         "IF THE ZIP FAILS, WAIT FOR UPDATE.",
         "AVOID THIRD-PARTY FLASHING FILES."
       ],
-      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Pacman_B4.1-260813-0941"
+      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Pacman_B4.1-260928-1157"
     },
     "p2aplus": {
-      "disp": "B4.1-260813-0941",
+      "disp": "B4.1-260928-1201",
       "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(2a)%20Plus.png",
       "logs": [
         "VERIFY THE FILE FOR YOUR DEVICE.",
         "IF THE ZIP FAILS, WAIT FOR UPDATE.",
         "AVOID THIRD-PARTY FLASHING FILES."
       ],
-      "url": "https://github.com/spike0en/nothing_archive/releases/tag/PacmanPro_B4.1-260813-0941"
+      "url": "https://github.com/spike0en/nothing_archive/releases/tag/PacmanPro_B4.1-260928-1201"
     },
     "p3": {
-      "disp": "B4.1-260814-1733",
+      "disp": "C5.0-260924-2115",
       "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3).png",
       "logs": [
         "VERIFY THE FILE FOR YOUR DEVICE.",
         "IF THE ZIP FAILS, WAIT FOR UPDATE.",
         "AVOID THIRD-PARTY FLASHING FILES."
       ],
-      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Metroid_B4.1-260814-1733"
+      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Metroid_C5.0-260924-2115"
     },
     "p3a": {
-      "disp": "B4.1-260810-1153",
+      "disp": "B4.1-260928-1204",
       "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3a).png",
       "logs": [
         "VERIFY THE FILE FOR YOUR DEVICE.",
         "IF THE ZIP FAILS, WAIT FOR UPDATE.",
         "AVOID THIRD-PARTY FLASHING FILES."
       ],
-      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Asteroids_B4.1-260810-1153"
+      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Asteroids_B4.1-260928-1204"
     },
     "p3alite": {
       "disp": "B4.1-260702-1815",
@@ -91,14 +91,14 @@
       "url": "https://github.com/spike0en/nothing_archive/releases/tag/Galaxian_B4.1-260702-1815"
     },
     "p3apro": {
-      "disp": "B4.1-260810-1153",
+      "disp": "B4.1-260928-1204",
       "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3a)%20Pro.png",
       "logs": [
         "VERIFY THE FILE FOR YOUR DEVICE.",
         "IF THE ZIP FAILS, WAIT FOR UPDATE.",
         "AVOID THIRD-PARTY FLASHING FILES."
       ],
-      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Asteroids_B4.1-260810-1153"
+      "url": "https://github.com/spike0en/nothing_archive/releases/tag/Asteroids_B4.1-260928-1204"
     },
     "p4a": {
       "disp": "B4.1-260911-0959",
