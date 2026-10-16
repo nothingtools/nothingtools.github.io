@@ -1,5 +1,12 @@
 [
   {
+    "title": "Essential Apps",
+    "version": "1.0.44",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Apps_1.0.44.png",
+    "date": "2026-10-16",
+    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
+  },
+  {
     "title": "Nothing Widgets",
     "version": "3.5.3",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_Widgets_3.5.3.png",
@@ -117,13 +124,6 @@
     "version": "1.0.42",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Apps_1.0.42.png",
     "date": "2026-09-17",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
-  },
-  {
-    "title": "Essential Apps",
-    "version": "1.0.39",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Apps_1.0.39.png",
-    "date": "2026-09-15",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
   }
 ]
