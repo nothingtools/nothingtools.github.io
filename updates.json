@@ -1,5 +1,12 @@
 [
   {
+    "title": "Nothing Weather",
+    "version": "3.4.1",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_Weather_3.4.1.png",
+    "date": "2026-10-20",
+    "url": "https://play.google.com/store/apps/details?id=com.nothing.weather"
+  },
+  {
     "title": "Essential Apps",
     "version": "1.0.44",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.44.png",
@@ -118,12 +125,5 @@
     "version": "Nothing OS B4.1-260907-1153",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__4a__Pro_Nothing_OS_B4.1-260907-1153.png",
     "date": "2026-09-21"
-  },
-  {
-    "title": "Essential Apps",
-    "version": "1.0.42",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.42.png",
-    "date": "2026-09-17",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
   }
 ]
