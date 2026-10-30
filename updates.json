@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Phone (3a) Series",
+    "version": "Nothing OS C5.0-261023-2146",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__3a__Series_Nothing_OS_C5.0-261023-2146.png",
+    "date": "2026-10-30"
+  },
+  {
     "title": "Nothing Headphone (a)",
     "version": "1.0.1.52",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Headphone__a__1.0.1.52.png",
@@ -118,12 +124,6 @@
     "title": "Nothing Phone (4a)",
     "version": "Nothing OS B4.1-260911-0959",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__4a__Nothing_OS_B4.1-260911-0959.png",
-    "date": "2026-10-08"
-  },
-  {
-    "title": "CMF Buds Neo",
-    "version": "1.0.1.57",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Buds_Neo_1.0.1.57.png",
     "date": "2026-10-08"
   }
 ]
