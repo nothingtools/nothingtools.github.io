@@ -1,5 +1,11 @@
 [
   {
+    "title": "CMF Clip Pro",
+    "version": "1.0.1.83",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Clip_Pro_1.0.1.83.png",
+    "date": "2026-11-02"
+  },
+  {
     "title": "Nothing X",
     "version": "3.10.2",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_X_3.10.2.png",
@@ -121,11 +127,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_X_3.10.0.png",
     "date": "2026-10-12",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.smartcenter"
-  },
-  {
-    "title": "Nothing Phone (3)",
-    "version": "Nothing OS C5.0-260924-2115",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__3__Nothing_OS_C5.0-260924-2115.png",
-    "date": "2026-10-12"
   }
 ]
