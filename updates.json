@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Phone (3a) Series",
+    "version": "Nothing OS C5.0-261106-1007",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__3a__Series_Nothing_OS_C5.0-261106-1007.png",
+    "date": "2026-11-12"
+  },
+  {
     "title": "Nothing X",
     "version": "3.10.3",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_X_3.10.3.png",
@@ -121,12 +127,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Apps_1.0.44.png",
     "date": "2026-10-16",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.essentialapps"
-  },
-  {
-    "title": "Nothing Widgets",
-    "version": "3.5.3",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_Widgets_3.5.3.png",
-    "date": "2026-10-15",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.hearthstone"
   }
 ]
