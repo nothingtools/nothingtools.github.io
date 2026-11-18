@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Nothing OS &amp; App Updates</title>
+        <link>https://nothingfirmware.github.io</link>
+        <description>Latest firmware and app updates tracker for Nothing Community.</description>
+        <lastBuildDate>Thu, 02 Jul 2026 16:54:03 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (1) (vNothing OS V3.2-260618-1045)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782908918482.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(1)-Nothing OS V3.2-260618-1045</guid>
+            <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782908918482.png" /><br/><p>New update available with version Nothing OS V3.2-260618-1045 released on 2026-07-01.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782908918482.png" /><br/><p>New update available with version Nothing OS V3.2-260618-1045 released on 2026-07-01.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (3) (vNothing OS B4.1-260624-1457)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782747836853.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(3)-Nothing OS B4.1-260624-1457</guid>
+            <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782747836853.png" /><br/><p>New update available with version Nothing OS B4.1-260624-1457 released on 2026-06-29.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782747836853.png" /><br/><p>New update available with version Nothing OS B4.1-260624-1457 released on 2026-06-29.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Essential Space (v2.0.9)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782725071942.png</link>
+            <guid isPermaLink="false">Essential-Space-2.0.9</guid>
+            <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782725071942.png" /><br/><p>New update available with version 2.0.9 released on 2026-06-29.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782725071942.png" /><br/><p>New update available with version 2.0.9 released on 2026-06-29.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (2) (vNothing OS B4.1-260618-1026)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782408247519.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(2)-Nothing OS B4.1-260618-1026</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782408247519.png" /><br/><p>New update available with version Nothing OS B4.1-260618-1026 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782408247519.png" /><br/><p>New update available with version Nothing OS B4.1-260618-1026 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for CMF Phone 2 Pro (vNothing OS B4.1-260615-1653)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384600391.png</link>
+            <guid isPermaLink="false">New-update-available-for-CMF-Phone-2-Pro-Nothing OS B4.1-260615-1653</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384600391.png" /><br/><p>New update available with version Nothing OS B4.1-260615-1653 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384600391.png" /><br/><p>New update available with version Nothing OS B4.1-260615-1653 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for CMF Phone 1 (vNothing OS B4.1-260615-1652)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384145095.png</link>
+            <guid isPermaLink="false">New-update-available-for-CMF-Phone-1-Nothing OS B4.1-260615-1652</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384145095.png" /><br/><p>New update available with version Nothing OS B4.1-260615-1652 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782384145095.png" /><br/><p>New update available with version Nothing OS B4.1-260615-1652 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (3a) Series (vNothing OS B4.1-260618-1048)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383523920.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(3a)-Series-Nothing OS B4.1-260618-1048</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383523920.png" /><br/><p>New update available with version Nothing OS B4.1-260618-1048 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383523920.png" /><br/><p>New update available with version Nothing OS B4.1-260618-1048 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (2a) Plus (vNothing OS B4.1-260609-1926)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383216473.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(2a)-Plus-Nothing OS B4.1-260609-1926</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383216473.png" /><br/><p>New update available with version Nothing OS B4.1-260609-1926 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782383216473.png" /><br/><p>New update available with version Nothing OS B4.1-260609-1926 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (2a) (vNothing OS B4.1-260609-1925)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782382707266.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(2a)-Nothing OS B4.1-260609-1925</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782382707266.png" /><br/><p>New update available with version Nothing OS B4.1-260609-1925 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782382707266.png" /><br/><p>New update available with version Nothing OS B4.1-260609-1925 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Nothing Gallery (v2.9.9.0624)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782370031163.png</link>
+            <guid isPermaLink="false">Nothing-Gallery-2.9.9.0624</guid>
+            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782370031163.png" /><br/><p>New update available with version 2.9.9.0624 released on 2026-06-25.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1782370031163.png" /><br/><p>New update available with version 2.9.9.0624 released on 2026-06-25.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Nothing X (v3.5.13)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781781334399.png</link>
+            <guid isPermaLink="false">Nothing-X-3.5.13</guid>
+            <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781781334399.png" /><br/><p>New update available with version 3.5.13 released on 2026-06-18.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781781334399.png" /><br/><p>New update available with version 3.5.13 released on 2026-06-18.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Phone (3) (vNothing OS B4.1-260603-1221)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781605939446.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Phone-(3)-Nothing OS B4.1-260603-1221</guid>
+            <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781605939446.png" /><br/><p>New update available with version Nothing OS B4.1-260603-1221 released on 2026-06-16.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781605939446.png" /><br/><p>New update available with version Nothing OS B4.1-260603-1221 released on 2026-06-16.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New update available for Nothing Ear (3 ) (v1.0.1.69)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781176489802.png</link>
+            <guid isPermaLink="false">New-update-available-for-Nothing-Ear-(3-)-1.0.1.69</guid>
+            <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781176489802.png" /><br/><p>New update available with version 1.0.1.69 released on 2026-06-11.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781176489802.png" /><br/><p>New update available with version 1.0.1.69 released on 2026-06-11.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Essential Space (v2.0.6)]]></title>
+            <link>https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781161433138.png</link>
+            <guid isPermaLink="false">Essential-Space-2.0.6</guid>
+            <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781161433138.png" /><br/><p>New update available with version 2.0.6 released on 2026-06-11.</p>]]></description>
+            <content:encoded><![CDATA[<img src="https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_1781161433138.png" /><br/><p>New update available with version 2.0.6 released on 2026-06-11.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

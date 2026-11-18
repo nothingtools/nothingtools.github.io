@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /atom.xml
+Allow: /rss.xml
+Allow: /sitemap.xml
+Allow: /websitemap.xml
+Allow: /opensearch.xml
+
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://nothingtools.github.io/sitemap.xml
+Sitemap: https://nothingtools.github.io/websitemap.xml
+Sitemap: https://nothingtools.github.io/atom.xml
+Sitemap: https://nothingtools.github.io/rss.xml

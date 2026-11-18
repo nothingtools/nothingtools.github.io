@@ -1,0 +1,134 @@
+{
+  "software_data": {
+    "cmf1": {
+      "disp": "B4.1-260928-1140",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/CMF%20Phone%20(1).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Tetris"
+    },
+    "cmf2pro": {
+      "disp": "B4.1-260928-1137",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/CMF%20Phone%20(2)%20Pro.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Galaga"
+    },
+    "p1": {
+      "disp": "V3.2-260618-1045",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(1).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Spacewar"
+    },
+    "p2": {
+      "disp": "B4.1-261014-1615",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/1a17c07b46dd73430e6c412b9f74d6d02dc0afe6/PHONE%20PICS/Nothing%20Phne%20(2)%20.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Pong"
+    },
+    "p2a": {
+      "disp": "B4.1-260928-1157",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(2a).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Pacman"
+    },
+    "p2aplus": {
+      "disp": "B4.1-260928-1201",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(2a)%20Plus.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/PacmanPro"
+    },
+    "p3": {
+      "disp": "C5.0-260924-2115",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Metroid"
+    },
+    "p3a": {
+      "disp": "C5.0-261106-1007",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3a).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Asteroids"
+    },
+    "p3alite": {
+      "disp": "B4.1-261029-1756",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3a)%20Lite.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Galaxian"
+    },
+    "p3apro": {
+      "disp": "C5.0-261106-1007",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(3a)%20Pro.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Asteroids"
+    },
+    "p4a": {
+      "disp": "C5.0-261023-2145",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(4a).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/Frogger"
+    },
+    "p4b": {
+      "disp": "B4.1-260904-1739",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(4b).png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/SuperContra"
+    },
+    "p4apro": {
+      "disp": "C5.0-261021-1625",
+      "img": "https://raw.githubusercontent.com/nothingcommunity/Testing/main/PHONE%20PICS/Nothing%20Phone%20(4a)%20Pro.png",
+      "logs": [
+        "VERIFY THE FILE FOR YOUR DEVICE.",
+        "IF THE ZIP FAILS, WAIT FOR UPDATE.",
+        "AVOID THIRD-PARTY FLASHING FILES."
+      ],
+      "url": "https://github.com/nothingota/nothingota.github.io/releases/tag/FroggerPro"
+    }
+  }
+}
