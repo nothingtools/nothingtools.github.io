@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Phone (2a) Plus",
+    "version": "Nothing OS C5.0-261112-1938",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Plus_Nothing_OS_C5.0-261112-1938.png",
+    "date": "2026-11-19"
+  },
+  {
     "title": "Nothing Phone (2a)",
     "version": "Nothing OS C5.0-261112-1938",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Nothing_OS_C5.0-261112-1938.png",
@@ -119,12 +125,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_Account_17.06.02.png",
     "date": "2026-10-21",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.user.center"
-  },
-  {
-    "title": "Nothing Weather",
-    "version": "3.4.1",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_Weather_3.4.1.png",
-    "date": "2026-10-20",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.weather"
   }
 ]
