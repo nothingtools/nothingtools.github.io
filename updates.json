@@ -1,5 +1,11 @@
 [
   {
+    "title": "Nothing Ear (3a)",
+    "version": "1.0.1.81",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Ear__3a__1.0.1.81.png",
+    "date": "2026-11-23"
+  },
+  {
     "title": "Essential Space",
     "version": "2.2.4",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Essential_Space_2.2.4.png",
@@ -118,11 +124,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_Gallery_3.1.3.1019.png",
     "date": "2026-10-27",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.gallery"
-  },
-  {
-    "title": "Nothing Phone (2)",
-    "version": "Nothing OS B4.1-261014-1615",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__2__Nothing_OS_B4.1-261014-1615.png",
-    "date": "2026-10-26"
   }
 ]
