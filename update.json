@@ -1,5 +1,12 @@
 [
   {
+    "title": "Essential Space",
+    "version": "2.2.4",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Essential_Space_2.2.4.png",
+    "date": "2026-11-23",
+    "url": "https://play.google.com/store/apps/details?id=com.nothing.ntessentialspace"
+  },
+  {
     "title": "Nothing Phone (2a) Plus",
     "version": "Nothing OS C5.0-261112-1938",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_light_Nothing_Phone__2a__Plus_Nothing_OS_C5.0-261112-1938.png",
@@ -118,12 +125,5 @@
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_X_3.10.1.png",
     "date": "2026-10-22",
     "url": "https://play.google.com/store/apps/details?id=com.nothing.smartcenter"
-  },
-  {
-    "title": "Nothing Account",
-    "version": "17.06.02",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_light_Nothing_Account_17.06.02.png",
-    "date": "2026-10-21",
-    "url": "https://play.google.com/store/apps/details?id=com.nothing.user.center"
   }
 ]
