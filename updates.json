@@ -1,5 +1,11 @@
 [
   {
+    "title": "CMF Clip Pro",
+    "version": "1.0.1.93",
+    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_CMF_Clip_Pro_1.0.1.93.png",
+    "date": "2026-11-25"
+  },
+  {
     "title": "Nothing Gallery",
     "version": "3.1.5.1120",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/ps_update_dark_Nothing_Gallery_3.1.5.1120.png",
@@ -118,12 +124,6 @@
     "title": "Nothing Phone (4a) Pro",
     "version": "Nothing OS C5.0-261021-1625",
     "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__4a__Pro_Nothing_OS_C5.0-261021-1625.png",
-    "date": "2026-10-30"
-  },
-  {
-    "title": "Nothing Phone (4a)",
-    "version": "Nothing OS C5.0-261023-2145",
-    "image": "https://raw.githubusercontent.com/nothingtools/nothingtools.github.io/main/Firmware/2026/update_dark_Nothing_Phone__4a__Nothing_OS_C5.0-261023-2145.png",
     "date": "2026-10-30"
   }
 ]
